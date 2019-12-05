@@ -2,8 +2,6 @@ import os
 import pytest
 
 from appium import webdriver
-
-from conftest import device_logger
 from helpers import take_screenhot_and_logcat
 
 

@@ -1,9 +1,6 @@
 import os
-# Returns abs path relative to this file and not cwd
-from confHelper.configHelper import TestWebViewAndroid
-from helpers import take_screenhot_and_logcat
-from  elements.autorization import confirmButton
 
+from confHelper.configHelper import TestWebViewAndroid
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
