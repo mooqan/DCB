@@ -8,7 +8,7 @@ PATH = lambda p: os.path.abspath(
 
 
 class Test(TestWebViewAndroid):
-    def test_autorization(self, driver):
+    def test_authorization(self, driver):
         confirmButton = driver.find_element_by_id("kg.o.nurtelecom:id/confirm")
         confirmButton.click()
         driver.implicitly_wait(30)
