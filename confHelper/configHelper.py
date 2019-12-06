@@ -9,7 +9,7 @@ APPIUM_LOCAL_HOST_URL = 'http://localhost:4723/wd/hub'
 PLATFORM_VERSION = '9.0'
 
 
-class TestWebViewAndroid:
+class capsAnroid:
     @pytest.fixture(scope="function")
     def driver(self, request, device_logger):
         desired_caps = {

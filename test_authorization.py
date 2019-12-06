@@ -1,13 +1,13 @@
 import os
 
-from confHelper.configHelper import TestWebViewAndroid
+from confHelper.configHelper import capsAnroid
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
 
-class Test(TestWebViewAndroid):
+class Test(capsAnroid):
     def test_authorization(self, driver):
         confirmButton = driver.find_element_by_id("kg.o.nurtelecom:id/confirm")
         confirmButton.click()
@@ -29,12 +29,22 @@ class Test(TestWebViewAndroid):
         phonePasswordAccept.click()
         driver.wait_activity(".ui.main.MainActivity", 100)
 
-
-class Test1(Test):
-    def test_add_contacts(self, driver):
+    def test_lk_screen(self, driver, ):
+        self.test_authorization(driver)
         internetButton = driver.find_element_by_id("kg.o.nurtelecom:id/internet_leftover")
         internetButton.click()
+        driver.back()
+        callLimmitButton = driver.find_element_by_id("kg.o.nurtelecom:id/outgoing_call_leftover")
+        callLimmitButton.click()
+        driver.back()
         driver.implicitly_wait(30)
+
+
+# class Test1(Test):
+#     def test_add_contacts(self, driver):
+#         internetButton = driver.find_element_by_id("kg.o.nurtelecom:id/internet_leftover")
+#         internetButton.click()
+#         driver.implicitly_wait(30)
 
         # textfields = driver.find_elements_by_class_name("android.widget.EditText")
         # textfields[0].send_keys("Appium User")
