@@ -4,7 +4,6 @@ from confHelper.configHelper import capsAnroid
 
 
 
-пше
 
 class Test(capsAnroid):
     def test_authorization(self, driver):
