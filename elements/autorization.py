@@ -2,27 +2,20 @@ import os
 
 from confHelper.configHelper import capsAnroid
 
+elements_autorization = {
+    "btn_confirm":"confirm",
+    "cnt_phone_number":"phone_number",
+    "btn_phone_number_next":"next",
+    "cnt_phone_pswrd":"et_password",
+    "btn_phone_pswrd_next":"confirm",
+
+}
+
+elements_lk = {
+    "btn_internet":"internet_leftover",
+
+
+}
 
 
 
-class Test(capsAnroid):
-    def test_authorization(self, driver):
-        confirmButton = driver.find_element_by_id("kg.o.nurtelecom:id/confirm")
-        confirmButton.click()
-        driver.implicitly_wait(30)
-
-        phoneNumberContainer = driver.find_element_by_id("kg.o.nurtelecom:id/phone_number")
-        phoneNumberContainer.send_keys("+996 702 242 516")
-        driver.implicitly_wait(30)
-
-        phoneNumberAccept = driver.find_element_by_id("kg.o.nurtelecom:id/next")
-        phoneNumberAccept.click()
-        driver.implicitly_wait(30)
-
-        phonePasswordContainer = driver.find_element_by_id("kg.o.nurtelecom:id/et_password")
-        phonePasswordContainer.send_keys("qwerty654321")
-        driver.implicitly_wait(30)
-
-        phonePasswordAccept = driver.find_element_by_id("kg.o.nurtelecom:id/confirm")
-        phonePasswordAccept.click()
-        driver.wait_activity(".ui.main.MainActivity", 100)
