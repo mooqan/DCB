@@ -1,7 +1,7 @@
 import os
 
 from confHelper.configHelper import capsAnroid
-from elements.autorization import elements_autorization, elements_lk
+from elements.autorization import elements_autorization, elements_lk, list_activity
 from confHelper.selector_helper import find_element_by_id
 
 PATH = lambda p: os.path.abspath(
@@ -30,14 +30,73 @@ class Test(capsAnroid):
         phone_pswrd_next_button = find_element_by_id(elements_autorization.get("btn_phone_pswrd_next"), driver)
         phone_pswrd_next_button.click()
 
-        driver.wait_activity(".ui.main.MainActivity", 100)
+        driver.wait_activity(".ui.main.MainActivity", 20)
 
     def test_lk(self, driver):
         self.test_authorization(driver)
-        internet_Button = find_element_by_id(elements_lk.get("btn_internet"), driver)
-        internet_Button.click()
+
+        refill_button = find_element_by_id(elements_lk.get("btn_refill"), driver)
+        refill_button.click()
+        # driver.wait_activity(list_activity.get("ServicePaymentActivity"), 10)
         driver.back()
+
         driver.implicitly_wait(30)
+        internet_button = find_element_by_id(elements_lk.get("btn_internet"), driver)
+        internet_button.click()
+        driver.wait_activity(list_activity.get("InternetServiceActivity"), 10)
+        driver.back()
+
+        driver.implicitly_wait(30)
+        btn_outgoing_call = find_element_by_id(elements_lk.get("btn_outgoing_call"), driver)
+        btn_outgoing_call.click()
+        driver.wait_activity(list_activity.get("CallServiceActivity"), 10)
+        driver.back()
+
+        driver.implicitly_wait(30)
+        sub_numbers_button = find_element_by_id(elements_lk.get("btn_sub_numbers"), driver)
+        sub_numbers_button.click()
+        driver.wait_activity(list_activity.get("ManageNumbersActivity"), 10)
+        driver.back()
+
+        # lottery
+        # driver.implicitly_wait(30)
+        # lottery_button = find_element_by_id(elements_lk.get("btn_lottery"), driver)
+        # driver.wait_activity(list_activity.get("LotteryInfoActivity"), 10)
+        # lottery_button.click()
+        # driver.back()
+
+        driver.implicitly_wait(30)
+        services_button = find_element_by_id(elements_lk.get("btn_services"), driver)
+        services_button.click()
+        driver.wait_activity(list_activity.get("ServiceCategoryActivity"), 10)
+        driver.back()
+
+        driver.implicitly_wait(30)
+        tariffs_button = find_element_by_id(elements_lk.get("btn_tariffs"), driver)
+        tariffs_button.click()
+        driver.wait_activity(list_activity.get("TariffCategoryActivity"), 10)
+        driver.back()
+
+        driver.implicitly_wait(30)
+        detalizatation_button = find_element_by_id(elements_lk.get("btn_detalizatation"), driver)
+        detalizatation_button.click()
+        driver.wait_activity(list_activity.get("CompleteDetalizationActivity"), 10)
+        driver.back()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # confirmButtonResource.click()

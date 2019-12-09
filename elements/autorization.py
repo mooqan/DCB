@@ -13,9 +13,25 @@ elements_autorization = {
 
 elements_lk = {
     "btn_internet":"internet_leftover",
-
-
+    "btn_outgoing_call":"outgoing_call_leftover",
+    "btn_refill":"ic_refill",
+    "btn_sub_numbers":"sub_numbers",
+    "btn_lottery":"lottery_view",
+    "btn_services":"services",
+    "btn_tariffs":"tariffs",
+    "btn_detalizatation":"detalizatation",
 }
 
+list_activity = {
+    "ServicePaymentActivity":"wallet.ui.payment.service.ServicePaymentActivity",
+    "InternetServiceActivity": ".ui.services.group.internet.InternetServiceActivity",
+    "CallServiceActivity": ".ui.services.group.call.CallServiceActivity",
+    "ManageNumbersActivity": ".ui.manage_numbers.ManageNumbersActivity",
+    "LotteryInfoActivity": ".ui.lottery.info.LotteryInfoActivity",
+    "ServiceCategoryActivity": ".ui.services.service.category.ServiceCategoryActivity",
+    "TariffCategoryActivity": ".ui.services.tariff.category.TariffCategoryActivity",
+    "CompleteDetalizationActivity":".ui.detalization.replenish_detalization.CompleteDetalizationActivity",
+
+}
 
 
