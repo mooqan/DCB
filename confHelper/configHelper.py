@@ -7,13 +7,14 @@ from helpers import take_screenhot_and_logcat
 
 APPIUM_LOCAL_HOST_URL = 'http://localhost:4723/wd/hub'
 PLATFORM_VERSION = '9.0'
-
+appNameTest = 'kg.o.nurtelecom.internal_test'
+appName = 'kg.o.nurtelecom'
 
 class capsAnroid:
     @pytest.fixture(scope="function")
     def driver(self, request, device_logger):
         desired_caps = {
-            'appPackage': 'kg.o.nurtelecom',
+            'appPackage': appName,
             'platformName': 'Android',
             'platformVersion': PLATFORM_VERSION,
             'deviceName': 'Nexus_5X_API_26_AV8',

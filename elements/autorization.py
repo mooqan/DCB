@@ -5,10 +5,10 @@ from confHelper.configHelper import capsAnroid
 elements = {
     #auth
     "btn_confirm":"confirm",
-    "cnt_phone_number":"phone_number",
-    "btn_phone_number_next":"next",
-    "cnt_phone_pswrd":"et_password",
-    "btn_phone_pswrd_next":"confirm",
+    "cnt_phone_number":"et_input",
+    "btn_phone_number_next":"btn",
+    "cnt_phone_pswrd":"et_input",
+    "btn_phone_pswrd_next":"btn",
     #LK
     "btn_internet": "internet_leftover",
     "btn_outgoing_call": "outgoing_call_leftover",
