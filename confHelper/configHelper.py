@@ -6,7 +6,7 @@ from helpers import take_screenhot_and_logcat
 
 
 APPIUM_LOCAL_HOST_URL = 'http://localhost:4723/wd/hub'
-PLATFORM_VERSION = '9.0'
+PLATFORM_VERSION = '9'
 appNameTest = 'kg.o.nurtelecom.internal_test'
 appName = 'kg.o.nurtelecom'
 

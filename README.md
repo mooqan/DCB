@@ -4,6 +4,10 @@ Python Pytest samples
 Tested on Python 3.8
 pip install -r requirements.txt
 
+# Run Test's:
+1) pytest auth.py::test_authorization::Test_LK
+2) pytest auth.py::test_authorization::OMoney
+
 # Run Syntax:
 README.md
 
