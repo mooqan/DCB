@@ -12,6 +12,8 @@ class Test(capsAnroid):
     def test_lk(self, driver):
         test_authorization(driver)
 
+        click_by_id(driver, "btn_scanner_course_cancel", "ServicePaymentActivity1", scrn=True)
+
         click_by_id(driver, "btn_refill", "ServicePaymentActivity", scrn=True)
         driver.back()
 
@@ -35,12 +37,12 @@ class Test(capsAnroid):
 
         click_by_id(driver, "btn_detalizatation", "CompleteDetalizationActivity", scrn=True)
 
-    def test_payment(self, driver):
-        test_authorization(driver)
-
-        click_by_id(driver, "btn_o!dengi", "GettingWalletStatusActivity", scrn=True)
-
-        click_by_xpath(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
+    # def test_payment(self, driver):
+    #     test_authorization(driver)
+    #
+    #     click_by_id(driver, "btn_o!dengi", "GettingWalletStatusActivity", scrn=True)
+    #
+    #     click_by_xpath(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
 
 class Test2(capsAnroid):
     def test_payment_ewallet(self, driver):

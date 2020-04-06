@@ -13,7 +13,9 @@ F_EXT = ".png"
 def click_by_id(driver, id, activity, scrn=None):
     driver.implicitly_wait(10)
     btn = find_element_by_id(elements.get(id), driver)
+
     btn.click()
+
     # driver.wait_activity(list_activity.get(activity), 10)
 
     if not driver.wait_activity(list_activity.get(activity), 10):
@@ -26,10 +28,10 @@ def click_by_id(driver, id, activity, scrn=None):
 
     driver.implicitly_wait(10)
 
-def send_keys_by_id(driver, id, activity, key, scrn=None):
+def send_keys_by_id(driver, id, activity, text, scrn=None):
     driver.implicitly_wait(10)
     cnt = find_element_by_id(elements.get(id), driver)
-    cnt.send_keys(key)
+    cnt.send_keys(text)
     # driver.wait_activity(list_activity.get(activity), 10)
 
     if not driver.wait_activity(list_activity.get(activity), 10):

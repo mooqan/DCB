@@ -10,9 +10,10 @@ elements = {
     "cnt_phone_pswrd":"et_input",
     "btn_phone_pswrd_next":"btn",
     #LK
+    "btn_scanner_course_cancel":"tv_ok",
     "btn_internet": "internet_leftover",
     "btn_outgoing_call": "outgoing_call_leftover",
-    "btn_refill": "ic_refill",
+    "btn_refill": "rl_refill",
     "btn_sub_numbers": "sub_numbers",
     "btn_lottery": "lottery_view",
     "btn_services": "services",
