@@ -6,7 +6,7 @@ pip install -r requirements.txt
 
 # Run Test's:
 1) pytest auth.py::test_authorization::Test_LK
-2) pytest auth.py::test_authorization::OMoney
+2) pytest auth.py::test_authorization::Test_OMoney
 
 # Run Syntax:
 README.md

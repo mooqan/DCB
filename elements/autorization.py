@@ -30,12 +30,20 @@ elements = {
     "btn_choose_payment_type":"choose",
     "cnt_amount":"amount",
     "btn_pay":"pay_btn",
+    "btn_credit":"credit_repayment",
+    "btn_cards":"my_cards",
+    "btn_history":"history",
+    "btn_fines":"unpaid_bills",
+    "btn_qr_scanner":"qr",
+    "btn_add_fav":"favoriteCardViewLayout",
+    "btn_search_catalog":"tv_clickable",
 }
 
 elements_path = {
     #auth
     #LK
     #Dengi
+    "btn_ewallet_refill":"//android.widget.FrameLayout[@index='1']/android.view.ViewGroup[@index='0']/android.widget.RelativeLayout[@index='2']",
     "btn_ewallet":"//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='0']",
     "btn_mwallet": "//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']",
     "btn_bcard": "//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']",
