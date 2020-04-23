@@ -45,52 +45,48 @@ class Test_LK(capsAnroid):
     #     click_by_xpath(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
 
 class Test_OMoney(capsAnroid):
-    def test_OMoney(self, driver):
-        test_authorization(driver)
-        click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
-
-        click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
-
-        click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
-
-        click_by_id(driver, "btn_refill", "refill", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_credit", "credit", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_cards", "cards", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_history", "history", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_fines", "fines", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_qr_scanner", "qr_scanner", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_add_fav", "add_fav", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_search_catalog", "catalog", scrn=True)
-        driver.back()
-
-
-
-
-
-
-
-
+    # def test_OMoney(self, driver):
+    #     test_authorization(driver)
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
+    #
+    #     click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
+    #
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
+    #
+    #     click_by_id(driver, "btn_refill", "refill", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_credit", "credit", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_cards", "cards", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_history", "history", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_fines", "fines", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_qr_scanner", "qr_scanner", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_add_fav", "add_fav", scrn=True)
+    #     driver.back()
+    #
+    #     click_by_id(driver, "btn_search_catalog", "catalog", scrn=True)
+    #     driver.back()
 
     # def test_payment_ewallet(self, driver):
     #     test_authorization(driver)
     #
-    #     click_by_id(driver, "btn_o!dengi", "GettingWalletStatusActivity", scrn=True)
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
     #
-    #     click_by_id(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
+    #     click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
+    #
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
+    #
+    #     click_by_id(driver, "btn_refill", "ServicePaymentActivity", scrn=True)
     #
     #     click_by_id(driver, "btn_choose_payment_type", "ChoosePaymentTypeActivity", scrn=True)
     #
@@ -105,9 +101,13 @@ class Test_OMoney(capsAnroid):
     # def test_payment_mwallet(self, driver):
     #     test_authorization(driver)
     #
-    #     click_by_id(driver, "btn_o!dengi", "GettingWalletStatusActivity", scrn=True)
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
     #
-    #     click_by_id(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
+    #     click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
+    #
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
+    #
+    #     click_by_id(driver, "btn_refill", "ServicePaymentActivity", scrn=True)
     #
     #     click_by_id(driver, "btn_choose_payment_type", "ChoosePaymentTypeActivity", scrn=True)
     #
@@ -118,20 +118,24 @@ class Test_OMoney(capsAnroid):
     #     click_by_id(driver, "btn_pay", "ReplenishmentConfirmationActivity", scrn=True)
     #
     #     click_by_id(driver, "btn_confirm", "ReplenishmentConfirmationActivity", scrn=True)
-
+    #
     # def test_payment_bcard(self, driver):
-    #     self.test_authorization(driver)
+    #     test_authorization(driver)
     #
-    #     click_by_id(driver, "btn_o!dengi", "GettingWalletStatusActivity", scrn=True)
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
     #
-    #     click_by_id(driver, "btn_self_refill", "ServicePaymentActivity", scrn=True)
+    #     click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
+    #
+    #     click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
+    #
+    #     click_by_id(driver, "btn_refill", "ServicePaymentActivity", scrn=True)
     #
     #     click_by_id(driver, "btn_choose_payment_type", "ChoosePaymentTypeActivity", scrn=True)
     #
     #     click_by_xpath(driver, "btn_bcard", "ChoosePaymentTypeActivity", scrn=True)
     #
     #     send_keys_by_id(driver, "cnt_amount", "ServicePaymentActivity", "10", scrn=True)
-    # git
+    #
     #     click_by_id(driver, "btn_pay", "ReplenishmentConfirmationActivity", scrn=True)
     #
     #     click_by_id(driver, "btn_confirm", "ReplenishmentConfirmationActivity", scrn=True)
