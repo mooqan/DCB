@@ -24,6 +24,10 @@ elements = {
     "btn_ru_lang":"lang_ru",
     "btn_ok":"button1",
     "btn_container":"tv_title",
+    "btn_edit_profile":"edit",
+    "cnt_email":"profile_email",
+    "cnt_name":"profile_name",
+    "btn_profile_save":"profile_save",
     #Dengi
     "btn_o!dengi":"menu_wallet",
     "btn_self_refill":"ic_refill",
@@ -42,6 +46,8 @@ elements = {
 elements_path = {
     #auth
     #LK
+    "btn_left_menu":"//androidx.drawerlayout.widget.DrawerLayout[@index='0']/android.view.ViewGroup[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='0']/android.widget.ImageButton[@index='0']",
+    "cnt_last_name":"//android.widget.ScrollView[@index='1']/android.widget.RelativeLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='2']/android.widget.FrameLayout[@index='0']/android.widget.EditText[@index='0']",
     #Dengi
     "btn_ewallet_refill":"//android.widget.FrameLayout[@index='1']/android.view.ViewGroup[@index='0']/android.widget.RelativeLayout[@index='2']",
     "btn_ewallet":"//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='0']",

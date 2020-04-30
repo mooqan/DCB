@@ -62,6 +62,22 @@ def click_by_xpath(driver, path, activity, scrn=None):
 
     driver.implicitly_wait(10)
 
+def send_keys_by_xpath(driver, id, activity, text, scrn=None):
+    driver.implicitly_wait(10)
+    cnt = find_element_by_xpath(elements_path.get(id), driver)
+    cnt.send_keys(text)
+    x = driver.wait_activity(list_activity.get(activity), 10)
+
+    if not x:
+        print('not in' + activity)
+
+    time.sleep(5)
+
+    if scrn is True:
+         driver.save_screenshot(directory + activity + F_EXT)
+
+    driver.implicitly_wait(10)
+
 def click_by_ac(driver, id, activity, scrn=None):
     driver.implicitly_wait(10)
     btn = find_elements_by_accessibility_id(elements.get(id), driver)
