@@ -17,9 +17,10 @@ class capsAnroid:
             'appPackage': appName,
             'platformName': 'Android',
             'platformVersion': PLATFORM_VERSION,
-            'deviceName': 'Nexus_5X_API_26_AV8',
+            'deviceName': '107164e',
             'appActivity': '.ui.splash.SplashScreenActivity',
-            'autoGrantPermissions': 'true'
+            'autoGrantPermissions': 'true',
+            'clearDeviceLogsOnStart': 'true'
         }
         calling_request = request._pyfuncitem.name
 
