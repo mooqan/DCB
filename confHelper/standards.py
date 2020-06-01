@@ -19,7 +19,7 @@ def click_by_id(driver, id, sleep=None, scrn=None):
     btn.click()
 
     if sleep is True:
-        driver.implicitly_wait(10)
+        time.sleep(5)
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
@@ -32,7 +32,7 @@ def send_keys_by_id(driver, id, text, sleep=None, scrn=None):
     cnt.send_keys(text)
 
     if sleep is True:
-        driver.implicitly_wait(10)
+        time.sleep(5)
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
@@ -45,7 +45,7 @@ def click_by_xpath(driver, path, sleep=None, scrn=None):
     btn.click()
 
     if sleep is True:
-        driver.implicitly_wait(10)
+        time.sleep(5)
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
@@ -58,7 +58,7 @@ def send_keys_by_xpath(driver, id, text, sleep=None, scrn=None):
     cnt.send_keys(text)
 
     if sleep is True:
-        driver.implicitly_wait(10)
+        time.sleep(5)
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
@@ -75,6 +75,7 @@ def click_by_ac(driver, id, activity, scrn=None):
         print('not in' + activity)
 
     time.sleep(5)
+
 
     if scrn is True:
          driver.save_screenshot(directory + activity + F_EXT)
