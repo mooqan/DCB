@@ -5,8 +5,9 @@ Tested on Python 3.8
 pip install -r requirements.txt
 
 # Run Test's:
-1) pytest auth.py::test_authorization::Test_LK
-2) pytest auth.py::test_authorization::Test_OMoney
+0) pytest --alluredir=/Users/test/PycharmProjects/pytest-android/tests test_main.py
+1) pytest test_lk.py
+2) pytest test_authorization.py
 
 # Run Syntax:
 README.md

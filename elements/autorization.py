@@ -9,7 +9,10 @@ elements = {
     "btn_phone_number_next":"btn",
     "cnt_phone_pswrd":"et_input",
     "btn_phone_pswrd_next":"btn",
+
     #LK
+    "btn_scanner_cancel":"tv_ok",
+    "space_out_cntn":"touch_outside",
     "btn_scanner_course_cancel":"tv_ok",
     "btn_internet": "internet_leftover",
     "btn_outgoing_call": "outgoing_call_leftover",
@@ -46,6 +49,7 @@ elements = {
 elements_path = {
     #auth
     "cnt_phone_pswrd":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText",
+    "btn_cancel_system_secure":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[1]",
     #LK
     "btn_left_menu":"//androidx.drawerlayout.widget.DrawerLayout[@index='0']/android.view.ViewGroup[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='0']/android.widget.ImageButton[@index='0']",
     "cnt_last_name":"//android.widget.ScrollView[@index='1']/android.widget.RelativeLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='2']/android.widget.FrameLayout[@index='0']/android.widget.EditText[@index='0']",
