@@ -6,7 +6,7 @@ from helpers import take_screenhot_and_logcat
 
 
 APPIUM_LOCAL_HOST_URL = 'http://localhost:4723/wd/hub'
-PLATFORM_VERSION = '9'
+PLATFORM_VERSION = '10'
 appNameTest = 'kg.o.nurtelecom.internal_test'
 appName = 'kg.o.nurtelecom'
 
@@ -20,7 +20,8 @@ class capsAnroid:
             'deviceName': '107164e',
             'appActivity': '.ui.splash.SplashScreenActivity',
             'autoGrantPermissions': 'true',
-            'clearDeviceLogsOnStart': 'true'
+            'clearDeviceLogsOnStart': 'true',
+            'noSign': 'true'
         }
         calling_request = request._pyfuncitem.name
 

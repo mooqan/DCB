@@ -11,3 +11,6 @@ venv/
 *.pyc
 *.pyc
 *.pyc
+*.json
+*.txt
+*.pyc
