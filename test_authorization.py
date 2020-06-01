@@ -11,27 +11,9 @@ from confHelper.auth import *
 @allure.story("Story #1 - Авторизация")
 class test_auth(capsAnroid):
     def test_payment_ewallet(self, driver):
-        with allure.step("Step 0 блок успешной авторизации"):
+        with allure.step("Step 1 введение номера"):
+            send_keys_by_id(driver, "cnt_phone_number", "702 242 516", sleep=None, scrn=True)
 
-            Test_authorization(driver)
-
-        click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
-
-        click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
-
-        click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
-
-        click_by_id(driver, "btn_refill", "ServicePaymentActivity", scrn=True)
-
-        click_by_id(driver, "btn_choose_payment_type", "ChoosePaymentTypeActivity", scrn=True)
-
-        click_by_xpath(driver, "btn_ewallet", "ChoosePaymentTypeActivity", scrn=True)
-
-        send_keys_by_id(driver, "cnt_amount", "ServicePaymentActivity", "10", scrn=True)
-
-        click_by_id(driver, "btn_pay", "ReplenishmentConfirmationActivity", scrn=True)
-
-        click_by_id(driver, "btn_confirm", "ReplenishmentConfirmationActivity", scrn=True)
 
     # def test_payment_mwallet(self, driver):
     #     test_authorization(driver)
