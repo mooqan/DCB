@@ -9,6 +9,7 @@ from confHelper.auth import *
 @allure.epic("Epic #1")
 @allure.feature("Feature #1 - Авторизация")
 @allure.story("Story #1 - Авторизация")
+@allure.severity(allure.severity_level.BLOCKER)
 class Test_auth(capsAnroid):
     @allure.title("Тест.авторизация")
     @allure.description("Проверка работоспособности авторизации")

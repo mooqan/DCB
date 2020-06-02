@@ -4,36 +4,42 @@ from confHelper.configHelper import capsAnroid
 from confHelper.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
 from confHelper.auth import Test_authorization
 
-
+@allure.epic("Epic #3")
+@allure.feature("Feature #1 - О!Деньги")
+@allure.severity(allure.severity_level.BLOCKER)
 class Test_OMoney(capsAnroid):
-    def test_OMoney(self, driver):
-        Test_authorization(driver)
-        click_by_id(driver, "btn_scanner_course_cancel", "main_lk", scrn=True)
-
-        click_by_id(driver, "btn_o!dengi", "main_omoney", scrn=True)
-
-        click_by_id(driver, "btn_scanner_course_cancel", "main_omoney1", scrn=True)
-
-        click_by_id(driver, "btn_refill", "refill", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_credit", "credit", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_cards", "cards", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_history", "history", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_fines", "fines", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_qr_scanner", "qr_scanner", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_add_fav", "add_fav", scrn=True)
-        driver.back()
-
-        click_by_id(driver, "btn_search_catalog", "catalog", scrn=True)
-        driver.back()
+    @allure.story("Story #1 - Главная страница Личного кабинета О!Деньги")
+    @allure.title("Тест.переходы на главном экране О!Деньги")
+    @allure.description("Проверка работоспособности переходов на главной странице О!Деньги")
+    def test_omoney(self, driver):
+        with allure.step("Step 0 блок успешной авторизации"):
+            Test_authorization(driver)
+        with allure.step("Step 1 Проверка перехода в модуль О!Деньги"):
+            click_by_id(driver, "btn_o!dengi", scrn=True, sleep=True)
+        with allure.step("Step 2 скрытие попапа о сканере"):
+            click_by_id(driver, "btn_scanner_course_cancel", sleep=True, scrn=True)
+        with allure.step("Step 3 Проверка перехода на окно 'пополнение своего баланса'"):
+            click_by_id(driver, "btn_refill", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 4 Проверка перехода в окно 'Кредит"):
+            click_by_id(driver, "btn_credit", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 5 Проверка перехода в окно 'Карты'"):
+            click_by_id(driver, "btn_cards", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 6 Проверка перехода в окно 'История'"):
+            click_by_id(driver, "btn_history", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 7 Проверка перехода в окно 'Штрафы'"):
+            click_by_id(driver, "btn_fines", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 8 Проверка перехода в окно 'Сканер'"):
+            click_by_id(driver, "btn_qr_scanner", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 9 Проверка перехода в окно 'Избранные'"):
+            click_by_id(driver, "btn_add_fav", sleep=True, scrn=True)
+            driver.back()
+        with allure.step("Step 10 Проверка перехода в окно 'Каталог'"):
+            click_by_id(driver, "btn_search_catalog", sleep=True, scrn=True)
+            driver.back()
+            driver.back()

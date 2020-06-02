@@ -19,4 +19,4 @@ def take_screenhot_and_logcat(driver, device_logger, calling_request):
         data_string = str(data['timestamp']) + ":  " + str(data['message'])
         logcat_file.write((data_string + '\n').encode("UTF-8"))
     logcat_file.close()
-    allure.attach.file(logFile_allure, "LogAndroid", allure.attachment_type.TEXT)
+    allure.attach.file(logFile_allure, "LogAndroid", allure.attachment_type.JSON)

@@ -6,8 +6,9 @@ from confHelper.auth import *
 
 @allure.epic("Epic #2")
 @allure.feature("Feature #1 - Личный кабинет")
-@allure.story("Story #1 - Личный кабинет")
-class Test_lk1(capsAnroid):
+@allure.severity(allure.severity_level.CRITICAL)
+class Test_lk(capsAnroid):
+    @allure.story("Story #1 - Главная страница Личного кабинета")
     @allure.title("Тест.переходы на главном экране ЛК")
     @allure.description("Проверка работоспособности переходов на главной странице ЛК")
     def test_main_page(self, driver):
@@ -38,8 +39,11 @@ class Test_lk1(capsAnroid):
         with allure.step("Step 8 проверка перехода в окно 'Детализация'"):
             click_by_id(driver, "btn_detalizatation", scrn=True, sleep=True)
             driver.back()
+
+    @allure.story("Story #2 - Профиль ЛК")
     @allure.title("Тест.сохранения профиля ЛК")
     @allure.description("Проверка работоспособности сохраниения профиля ЛК")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_left_menu_profile(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -54,5 +58,5 @@ class Test_lk1(capsAnroid):
             send_keys_by_id(driver, "cnt_name", "Anatolii", scrn=True, sleep=True)
         with allure.step("Step 5 проверка заполнения фамилии в окне 'Профиля'"):
             send_keys_by_xpath(driver, "cnt_last_name", "Petrov", scrn=True, sleep=True)
-        with allure.step("Step 6 проверка заполнения почты в окне 'Профиля'"):
+        with allure.step("Step 6 проверка нажатия кнопки сохранения"):
             click_by_id(driver, "btn_profile_save", scrn=True, sleep=True)
