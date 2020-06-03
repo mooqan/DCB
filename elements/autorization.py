@@ -44,6 +44,9 @@ elements = {
     "btn_qr_scanner":"qr",
     "btn_add_fav":"favoriteCardViewLayout",
     "btn_search_catalog":"tv_clickable",
+    #Self_paymaent
+    "btn_self_payment_cont":"btn",
+    "btn_choose_payment_wallet":"tv_action",
 }
 
 elements_path = {
@@ -60,7 +63,10 @@ elements_path = {
     "btn_bcard": "//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']",
     "btn_side_menu":"//androidx.drawerlayout.widget.DrawerLayout[@index='0']/android.view.ViewGroup[@index='0']/android.widget.LinearLayout[@index='0']/android.widget.LinearLayout[@index='0']/android.view.ViewGroup[@index='0']/android.widget.ImageButton[@index='0']",
     "btn_setings":"//androidx.recyclerview.widget.RecyclerView[@index='0']/androidx.appcompat.widget.LinearLayoutCompat[@index='5']",
-
+    "btn_payment_type_mwallet":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.TextView",
+    "cnt_payment_value":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.EditText",
+    "btn_self_payment_cont1":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.Button",
+    "btn_self_payment_cont2":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.Button",
 }
 
 # elements_lk = {

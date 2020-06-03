@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 from confHelper.configHelper import capsAnroid
 from confHelper.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
@@ -11,6 +12,7 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #1 - Главная страница Личного кабинета О!Деньги")
     @allure.title("Тест.переходы на главном экране О!Деньги")
     @allure.description("Проверка работоспособности переходов на главной странице О!Деньги")
+    @pytest.mark.skip(reason="не требуется")
     def test_omoney(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -43,3 +45,28 @@ class Test_OMoney(capsAnroid):
             click_by_id(driver, "btn_search_catalog", sleep=True, scrn=True)
             driver.back()
             driver.back()
+    @allure.story("Story #2 - Пополнение собственного mwallet")
+    @allure.title("Тест.Пополнение собственного mwallet")
+    @allure.description("Проверка работоспособности пополнение своего mwallet О!Деньги")
+    def test_self_payment_mwallet(self, driver):
+        with allure.step("Step 0 блок успешной авторизации"):
+            Test_authorization(driver)
+        with allure.step("Step 1 Проверка перехода в модуль О!Деньги"):
+            click_by_id(driver, "btn_o!dengi", scrn=True, sleep=True)
+        with allure.step("Step 2 скрытие попапа о сканере"):
+            click_by_id(driver, "btn_scanner_course_cancel", sleep=True, scrn=True)
+        with allure.step("Step 3 Проверка перехода на окно 'пополнение своего баланса'"):
+            click_by_id(driver, "btn_refill", sleep=True, scrn=True)
+        with allure.step("Step 4 Проверка перехода на окно завершения пополнения самого себя"):
+            click_by_id(driver, "btn_self_payment_cont", sleep=True, scrn=True)
+        with allure.step("Step 5 Проверка перехода на окно выбора способа платежа"):
+            click_by_id(driver, "btn_choose_payment_wallet", sleep=True, scrn=True)
+        with allure.step("Step 6 Проверка выбора оплаты с mwallet"):
+            click_by_xpath(driver, "btn_payment_type_mwallet", sleep=True, scrn=True)
+        with allure.step("Step 7 Проверка заполнениея суммы пополнения"):
+            send_keys_by_xpath(driver, "cnt_payment_value", "10", sleep=True, scrn=True)
+        with allure.step("Step 8 Проверка подтверждения создания платежа"):
+            click_by_xpath(driver, "btn_self_payment_cont1", sleep=True, scrn=True)
+        with allure.step("Step 9 Проверка подтверждения создания платежа"):
+            click_by_xpath(driver, "btn_self_payment_cont2", sleep=True, scrn=True)
+
