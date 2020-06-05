@@ -24,9 +24,9 @@ class Test_auth(capsAnroid):
         with allure.step("Step 3 введение пароля"):
             # send_keys_by_id(driver, "cnt_phone_pswrd", "Qwerty65", scrn=True)
             send_keys_by_xpath(driver, "cnt_phone_pswrd", "Qwerty654321", scrn=True)
-        with allure.step("Step 4 нажатин далее"):
+        with allure.step("Step 4 нажатие кнопки далее"):
             click_by_id(driver, "btn_phone_pswrd_next", scrn=True)
-        with allure.step("Step 5 нажатин далее"):
+        with allure.step("Step 5 нажатие кнопки далее"):
             click_by_xpath(driver, "btn_cancel_system_secure", scrn=True)
         with allure.step("Step 6 скрытие контейнера о малом балансе"):
             click_by_id(driver, "space_out_cntn", scrn=True)

@@ -12,7 +12,7 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #1 - Главная страница Личного кабинета О!Деньги")
     @allure.title("Тест.переходы на главном экране О!Деньги")
     @allure.description("Проверка работоспособности переходов на главной странице О!Деньги")
-    @pytest.mark.skip(reason="не требуется")
+    # @pytest.mark.skip(reason="не требуется")
     def test_omoney(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -48,6 +48,7 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #2 - Пополнение собственного mwallet")
     @allure.title("Тест.Пополнение собственного mwallet")
     @allure.description("Проверка работоспособности пополнение своего mwallet О!Деньги")
+    @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
     def test_self_payment_mwallet(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)

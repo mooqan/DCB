@@ -7,3 +7,4 @@ class Test_main1(capsAnroid):
     Test_lk()
     Test_auth()
     Test_OMoney()
+    Test_left_menu()
