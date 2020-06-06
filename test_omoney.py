@@ -5,7 +5,7 @@ from confHelper.configHelper import capsAnroid
 from confHelper.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
 from confHelper.auth import Test_authorization
 
-@allure.epic("Epic #3")
+@allure.epic("Epic #3 - Модуль О!Деньги")
 @allure.feature("Feature #1 - О!Деньги")
 @allure.severity(allure.severity_level.BLOCKER)
 class Test_OMoney(capsAnroid):

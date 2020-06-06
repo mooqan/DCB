@@ -9,7 +9,7 @@ from confHelper.auth import *
 import time
 
 
-@allure.epic("Epic #2")
+@allure.epic("Epic #2 - Модуль Личного кабинета О!")
 @allure.feature("Feature #1 - Личный кабинет")
 @allure.severity(allure.severity_level.CRITICAL)
 class Test_lk(capsAnroid):
@@ -47,7 +47,7 @@ class Test_lk(capsAnroid):
 
 
 
-@allure.epic("Epic #2")
+@allure.epic("Epic #2 - Модуль Личного кабинета О!")
 @allure.feature("Feature #2 - боковое меню ЛК")
 class Test_left_menu(capsAnroid):
     @allure.story("Story #1 - Профиль ЛК")

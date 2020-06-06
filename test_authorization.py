@@ -6,7 +6,8 @@ from confHelper.configHelper import capsAnroid
 from confHelper.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
 from confHelper.auth import *
 
-@allure.epic("Epic #1")
+
+@allure.epic("Epic #1 - Модуль авторизации в приложении Мой О!")
 @allure.feature("Feature #1 - Авторизация")
 @allure.story("Story #1 - Авторизация")
 @allure.severity(allure.severity_level.BLOCKER)
@@ -95,5 +96,5 @@ class Test_auth(capsAnroid):
 #         m.get_attribute('text')
 #         print(m)
 
-        # el = self.driver.find_element_by_accessibility_id('SomeAccessibilityID')
-        # text = el.text
+# el = self.driver.find_element_by_accessibility_id('SomeAccessibilityID')
+# text = el.text
