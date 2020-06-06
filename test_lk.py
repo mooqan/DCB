@@ -55,7 +55,7 @@ class Test_left_menu(capsAnroid):
     @allure.description("Проверка работоспособности сохраниения профиля ЛК")
     @allure.severity(allure.severity_level.NORMAL)
     # @pytest.mark.skip(reason="не требуется")
-    def test_left_menu_profile(self, driver):
+    def test_lk_save_profile(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
         # click_by_id(driver, "btn_scanner_course_cancel", scrn=True)
@@ -76,7 +76,8 @@ class Test_left_menu(capsAnroid):
     @allure.title("Тест.Смена языка")
     @allure.description("Проверка работоспособности смены языка профиля ЛК")
     @allure.severity(allure.severity_level.NORMAL)
-    def test_left_menu_profile(self, driver):
+    # @pytest.mark.skip(reason="не требуется")
+    def test_lk_change_lang(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
         # click_by_id(driver, "btn_scanner_course_cancel", scrn=True)
@@ -91,6 +92,31 @@ class Test_left_menu(capsAnroid):
             c.click()
             time.sleep(5)
             allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+
+    @allure.story("Story #3 - офисы и терминалы")
+    @allure.title("Тест.Офисы и терминалы")
+    @allure.description("Проверка работоспособности отображение офисов и перехода в окне 'Офисы и терминалы'")
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_office_and_terminals(self, driver):
+        with allure.step("Step 0 блок успешной авторизации"):
+            Test_authorization(driver)
+        # click_by_id(driver, "btn_scanner_course_cancel", scrn=True)
+        with allure.step("Step 1 проверка перехода в боковое меню"):
+            click_by_xpath(driver, "btn_left_menu", scrn=True, sleep=True)
+        with allure.step("Step 2 проверка перехода в окно 'Офисы и терминалы'"):
+            click_by_xpath(driver, "btn_office_terminals", scrn=True, sleep=True)
+        with allure.step("Step 3 проверка перехода в список офисов"):
+            click_by_id(driver, "btn_office_list", scrn=True, sleep=True)
+        with allure.step("Step 4 проверка перехода в первый офис в списке"):
+            click_by_xpath(driver, "btn_first_office", scrn=True, sleep=True)
+            driver.back()
+        with allure.step("Step 5 проверка переъода в список терминалов"):
+            click_by_xpath(driver, "btn_page_terminals", scrn=True, sleep=True)
+        with allure.step("Step 6 проверка перехода в первый терминал в списке"):
+            click_by_xpath(driver, "btn_first_terminal", scrn=True, sleep=True)
+            driver.back()
+
+
 
 
 
