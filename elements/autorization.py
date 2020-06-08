@@ -33,6 +33,8 @@ elements = {
     "btn_profile_save":"profile_save",
     "btn_choose_ru_lang":"lang_ru",
     "btn_office_list":"office_list",
+    "btn_place_of_payment_payment":"pay_btn",
+    "cnt_search_field_place_of_payment":"et_search",
     #Dengi
     "btn_o!dengi":"menu_wallet",
     "btn_self_refill":"ic_refill",
@@ -63,6 +65,10 @@ elements_path = {
     "btn_first_office":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]",
     "btn_page_terminals":'//androidx.appcompat.app.ActionBar.Tab[@content-desc="TERMINALS"]',
     "btn_first_terminal":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]",
+    "btn_place_of_payment":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[3]",
+    "cnt_search_place_of_payment":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView",
+    "btn_search_result_place_of_payment":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup",
+
 
     #Dengi
     "btn_ewallet_refill":"//android.widget.FrameLayout[@index='1']/android.view.ViewGroup[@index='0']/android.widget.RelativeLayout[@index='2']",

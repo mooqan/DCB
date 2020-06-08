@@ -95,8 +95,9 @@ class Test_left_menu(capsAnroid):
 
     @allure.story("Story #3 - офисы и терминалы")
     @allure.title("Тест.Офисы и терминалы")
-    @allure.description("Проверка работоспособности отображение офисов и перехода в окне 'Офисы и терминалы'")
+    @allure.description("Проверка работоспособности отображения офисов и перехода в окне 'Офисы и терминалы'")
     @allure.severity(allure.severity_level.NORMAL)
+    # @pytest.mark.skip(reason="не требуется")
     def test_office_and_terminals(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -115,6 +116,33 @@ class Test_left_menu(capsAnroid):
         with allure.step("Step 6 проверка перехода в первый терминал в списке"):
             click_by_xpath(driver, "btn_first_terminal", scrn=True, sleep=True)
             driver.back()
+
+    @allure.story("Story #4 - места оплаты")
+    @allure.title("Тест.Места оплаты")
+    @allure.description("Проверка работоспособности отображения мест оплаты в 'Места оплаты'")
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_place_of_payment(self, driver):
+        with allure.step("Step 0 блок успешной авторизации"):
+            Test_authorization(driver)
+        # click_by_id(driver, "btn_scanner_course_cancel", scrn=True)
+        with allure.step("Step 1 проверка перехода в боковое меню"):
+            click_by_xpath(driver, "btn_left_menu", scrn=True, sleep=True)
+        with allure.step("Step 2 проверка перехода в окно 'Места оплаты'"):
+            click_by_xpath(driver, "btn_place_of_payment", scrn=True, sleep=True)
+        with allure.step("Step 3 проверка перехода в окно 'Офисы и терминалы'"):
+            click_by_xpath(driver, "cnt_search_place_of_payment", scrn=True, sleep=True)
+        with allure.step("Step 4 проверка открытия поиска в окне 'Офисы и терминалы'"):
+            send_keys_by_id(driver, "cnt_search_field_place_of_payment", "boris", scrn=True, sleep=True)
+        with allure.step("Step 5 проверка ввода в поиск в 'Офисы и терминалы'"):
+            click_by_xpath(driver, "btn_search_result_place_of_payment", scrn=True, sleep=True)
+        with allure.step("Step 6 проверка перехода в окно оплаты после поиска в 'Офисы и терминалы'"):
+            click_by_id(driver, "btn_place_of_payment_payment", scrn=True, sleep=True)
+
+
+
+
+
+
 
 
 
