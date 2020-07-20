@@ -50,7 +50,7 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #2 - Пополнение собственного mwallet")
     @allure.title("Тест.Пополнение собственного mwallet")
     @allure.description("Проверка работоспособности пополнение своего mwallet О!Деньги")
-    @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
+    # @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
     def test_self_payment_mwallet(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -75,8 +75,8 @@ class Test_OMoney(capsAnroid):
 
     @allure.story("Story #3 - Пополнение собственного ewallet")
     @allure.title("Тест.Пополнение собственного ewallet")
-    @allure.description("Проверка работоспособности пополнение своего mwallet О!Деньги")
-    # @pytest.mark.skip(reason="работает проверять во время ночных")
+    @allure.description("Проверка работоспособности пополнение своего ewallet О!Деньги")
+    @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
     def test_self_payment_ewallet(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
@@ -87,9 +87,9 @@ class Test_OMoney(capsAnroid):
         with allure.step("Step 3 Проверка перехода на окно 'пополнение своего ewallet'"):
             click_by_xpath(driver, "btn_self_refill_ewallet", sleep=True, scrn=True)
         with allure.step("Step 4 Проверка ввода суммы пополнения в контейнер"):
-            send_keys_by_id(driver, "cnt_amount_ewallet_payment", "50", sleep=True, scrn=True)
+            click_by_xpath(driver, "btn_50_ammount", sleep=True, scrn=True)
         with allure.step("Step 5 Проверка нажатия кнопки пополнения"):
-            click_by_id(driver, "btn_replenish", sleep=True, scrn=True)
+            click_by_id(driver, "btn_self_payment_cont", sleep=True, scrn=True)
         # with allure.step("Step 6 Проверка нажатия кнопки согласия проведения транзакции"):
         #     c = driver.find_element_by_id("android:id/button1")
         #     c.click()
@@ -99,7 +99,7 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #4 - Перевод средств между ewallet")
     @allure.title("Тест.Перевод средств между ewallet")
     @allure.description("Проверка работоспособности переводов между ewallet")
-    # @pytest.mark.skip(reason="работает проверять во время ночных")
+    @pytest.mark.skip(reason="работает проверять во время ночных")
     def test_transfer_payment_ewallet(self, driver):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driver)
