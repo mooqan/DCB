@@ -1,10 +1,8 @@
-import os
-
 import allure
 
-from confHelper.configHelper import capsAnroid
-from confHelper.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
-from confHelper.auth import *
+from confHelper.configHelperAndroid.configHelperAndroid import capsAnroid
+from confHelper.configHelperAndroid.standards import send_keys_by_xpath
+from confHelper.configHelperAndroid.authAndroid import *
 
 
 @allure.epic("Epic #1 - Модуль авторизации в приложении Мой О!")
@@ -14,25 +12,25 @@ from confHelper.auth import *
 class Test_auth(capsAnroid):
     @allure.title("Тест.авторизация")
     @allure.description("Проверка работоспособности авторизации")
-    def test_payment_ewallet(self, driver):
+    def test_payment_ewallet(self, driverAndroid):
         with allure.step("Step 1 введение номера"):
             # click_by_id(driver, "btn_confirm", "UseConditionConfirmActivity", scrn=True)
             # m = driver.find_element_by_id("kg.o.nurtelecom:id/et_input")
             # m.send_keys("702 242 516")
-            send_keys_by_id(driver, "cnt_phone_number", "+996 702 242 516", sleep=None, scrn=True)
+            send_keys_by_id(driverAndroid, "cnt_phone_number", "+996 702 242 516", sleep=None, scrn=True)
         with allure.step("Step 2 нажатие далее"):
-            click_by_id(driver, "btn_phone_number_next", scrn=True)
+            click_by_id(driverAndroid, "btn_phone_number_next", scrn=True)
         with allure.step("Step 3 введение пароля"):
             # send_keys_by_id(driver, "cnt_phone_pswrd", "Qwerty65", scrn=True)
-            send_keys_by_xpath(driver, "cnt_phone_pswrd", "Qwerty654321", scrn=True)
+            send_keys_by_xpath(driverAndroid, "cnt_phone_pswrd", "Qwerty654321", scrn=True)
         with allure.step("Step 4 нажатие кнопки далее"):
-            click_by_id(driver, "btn_phone_pswrd_next", scrn=True)
+            click_by_id(driverAndroid, "btn_phone_pswrd_next", scrn=True)
         with allure.step("Step 5 нажатие кнопки далее"):
-            click_by_xpath(driver, "btn_cancel_system_secure", scrn=True)
+            click_by_xpath(driverAndroid, "btn_cancel_system_secure", scrn=True)
         with allure.step("Step 6 скрытие контейнера о малом балансе"):
-            click_by_id(driver, "space_out_cntn", scrn=True)
+            click_by_id(driverAndroid, "space_out_cntn", scrn=True)
         with allure.step("Step 7 скрытие контейнера о сканере"):
-            click_by_id(driver, "btn_scanner_cancel", scrn=True)
+            click_by_id(driverAndroid, "btn_scanner_cancel", scrn=True)
 
     # def test_payment_mwallet(self, driver):
     #     test_authorization(driver)

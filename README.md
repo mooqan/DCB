@@ -5,9 +5,10 @@ Tested on Python 3.8
 pip install -r requirements.txt
 
 # Run Test's:
-0) pytest --alluredir=/Users/test/PycharmProjects/pytest-android/tests test_main.py
-1) pytest test_lk.py
-2) pytest test_authorization.py
+1) pytest --alluredir=allureResult test_main.py
+
+# Run Test's:
+1) allure serve allureResult
 
 # Run Syntax:
 README.md

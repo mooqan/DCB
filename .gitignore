@@ -1,5 +1,7 @@
 .idea/
 venv/
+allureResult/
+.pytest_cache/
 *.pyc
 *.pyc
 *.png
@@ -13,5 +15,6 @@ venv/
 *.pyc
 *.json
 *.txt
+*.pyc
 *.pyc
 *.pyc

@@ -12,7 +12,7 @@ appName = 'kg.o.nurtelecom'
 
 class capsAnroid:
     @pytest.fixture(scope="function")
-    def driver(self, request, device_logger):
+    def driverAndroid(self, request, device_logger):
         desired_caps = {
             'appPackage': appName,
             'platformName': 'Android',
