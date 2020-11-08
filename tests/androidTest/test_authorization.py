@@ -17,6 +17,8 @@ class Test_auth(capsAnroid):
             # click_by_id(driver, "btn_confirm", "UseConditionConfirmActivity", scrn=True)
             # m = driver.find_element_by_id("kg.o.nurtelecom:id/et_input")
             # m.send_keys("702 242 516")
+            # driverAndroid.implicitly_wait(10)
+            # driverAndroid.find_element_by_id("android:id/button1").click()
             send_keys_by_id(driverAndroid, "cnt_phone_number", "+996 702 242 516", sleep=None, scrn=True)
         with allure.step("Step 2 нажатие далее"):
             click_by_id(driverAndroid, "btn_phone_number_next", scrn=True)
