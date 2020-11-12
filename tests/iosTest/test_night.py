@@ -9,7 +9,7 @@ from elements.elementsIOS import *
 @allure.epic("Epic #999 - Ночные тесты")
 @allure.feature("Feature #1 - Положительный тест.ночных")
 @allure.severity(allure.severity_level.BLOCKER)
-class Test_balance(capsIOS):
+class Test_night(capsIOS):
     @allure.story("Story #1 - Ночной тест")
     @allure.title("Ночной тест")
     @allure.description("Проверка неразрыва сессии, наличие избранных, наличие банковских карт, наличие истории платежей, наличие комиссий")
