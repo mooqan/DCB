@@ -1,4 +1,5 @@
 .idea/
+.idea\
 venv/
 allureResult/
 .pytest_cache/
@@ -20,3 +21,7 @@ allureResult/
 *.pyc
 *.xml
 *.iml
+.idea/vcs.xml
+/.pytest_cache/
+*.xml
+.idea/misc.xml
