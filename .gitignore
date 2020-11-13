@@ -25,3 +25,4 @@ allureResult/
 /.pytest_cache/
 *.xml
 .idea/misc.xml
+.idea/pytest.iml
