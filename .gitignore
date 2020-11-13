@@ -18,3 +18,5 @@ allureResult/
 *.pyc
 *.pyc
 *.pyc
+*.xml
+*.iml

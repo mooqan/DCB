@@ -85,3 +85,20 @@ def click_by_ac(driver, id, activity, scrn=None):
         driver.save_screenshot(directory + activity + F_EXT)
 
     driver.implicitly_wait(10)
+
+
+def screenshot(driver, sleep=None):
+    if sleep is True:
+        time.sleep(5)
+
+    allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+
+
+def swipe(driver, sleep=None, scrn=None):
+    driver.swipe(100, 600, 100, 1400)
+
+    if sleep is True:
+        time.sleep(5)
+
+    if scrn is True:
+        allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
