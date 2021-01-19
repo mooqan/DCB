@@ -11,9 +11,9 @@ from confHelper.configHelperAndroid.authAndroid import *
 
 @allure.epic("Epic #2 - Модуль Личного кабинета О!")
 @allure.feature("Feature #1 - Личный кабинет")
+@allure.story("Story #1 - Главная страница Личного кабинета")
 @allure.severity(allure.severity_level.CRITICAL)
 class Test_lk(capsAnroid):
-    @allure.story("Story #1 - Главная страница Личного кабинета")
     @allure.title("Тест.переходы на главном экране ЛК")
     @allure.description("Проверка работоспособности переходов на главной странице ЛК")
     @pytest.mark.skip(reason="не требуется")

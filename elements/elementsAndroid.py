@@ -1,10 +1,10 @@
 elements = {
     #auth
     "btn_confirm":"confirm",
-    "cnt_phone_number":"et_input",
-    "btn_phone_number_next":"btn",
+    "cnt_phone_number":"inp_phone_number",
+    "btn_phone_number_next":"btn_enter",
     "cnt_phone_pswrd":"et_input",
-    "btn_phone_pswrd_next":"btn",
+    "btn_phone_pswrd_next":"btn_enter",
 
     #number recovery
     "btn_phone_recovery": "number_recovery",

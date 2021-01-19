@@ -24,7 +24,7 @@ class Test_auth(capsAnroid):
             click_by_id(driverAndroid, "btn_phone_number_next", scrn=True)
         with allure.step("Step 3 введение пароля"):
             # send_keys_by_id(driver, "cnt_phone_pswrd", "Qwerty65", scrn=True)
-            send_keys_by_xpath(driverAndroid, "cnt_phone_pswrd", "Qwerty654321", scrn=True)
+            send_keys_by_id(driverAndroid, "cnt_phone_pswrd", "Qwerty654321", scrn=True)
         with allure.step("Step 4 нажатие кнопки далее"):
             click_by_id(driverAndroid, "btn_phone_pswrd_next", scrn=True)
         with allure.step("Step 5 нажатие кнопки далее"):

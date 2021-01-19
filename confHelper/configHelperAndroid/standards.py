@@ -30,6 +30,7 @@ def click_by_id(driver, id, sleep=None, scrn=None):
 
 def send_keys_by_id(driver, id, text, sleep=None, scrn=None):
     driver.implicitly_wait(10)
+
     cnt = find_element_by_id(elements.get(id), driver)
     cnt.send_keys(text)
 
