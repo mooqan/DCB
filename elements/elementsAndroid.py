@@ -51,6 +51,7 @@ elements = {
     "cnt_amount":"amount",
     "btn_pay":"pay_btn",
     "btn_credit":"credit_repayment",
+    "btn_bonuses":"bonuses",
     "btn_cards":"my_cards",
     "btn_history":"history",
     "btn_fines":"unpaid_bills",

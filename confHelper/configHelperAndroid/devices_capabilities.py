@@ -67,6 +67,17 @@ device = {
         'deviceName': 'Samsung S10',
         'udid': 'RF8M902KKPF',
         'autoGrantPermissions': 'true',
+    },
+    7: {
+        'appPackage': appPackage,
+        'platformName': 'Android',
+        'platformVersion': '10.0',
+        'deviceName': 'f9ef4db3',
+        'udid': 'f9ef4db3',
+        'appActivity': '.ui.splash.SplashScreenActivity',
+        'autoGrantPermissions': 'true',
+        'clearDeviceLogsOnStart': 'true',
+        'noSign': 'true'
     }
 }
 
