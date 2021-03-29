@@ -71,7 +71,7 @@ def click_by_accessibility_id(driver, id, sleep=None, scrn=None):
 
 def send_keys_by_accessibility_id(driver, id, key, sleep=None, scrn=None):
     driver.implicitly_wait(10)
-    cnt = find_element_by_xpath(elements.get(id), driver)
+    cnt = find_element_by_accessibility_id(elements.get(id), driver)
     cnt.send_keys(key)
 
     if sleep is True:
