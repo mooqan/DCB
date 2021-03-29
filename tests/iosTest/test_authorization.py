@@ -1,7 +1,7 @@
 import allure
 
 from confHelper.configHelperIOS.configHelperIOS import capsIOS
-from confHelper.configHelperIOS.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
+from confHelper.configHelperIOS.standards import *
 from elements.elementsIOS import *
 
 @allure.epic("Epic #1")
