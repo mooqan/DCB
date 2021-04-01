@@ -10,8 +10,8 @@ def ensure_dir(directory):
 
 def take_screenhot_and_logcat(driver, device_logger, calling_request):
     logcat_dir = device_logger.logcat_dir
-    screenshot_dir = device_logger.screenshot_dir
-    driver.save_screenshot(os.path.join(screenshot_dir, calling_request + ".png"))
+    # screenshot_dir = device_logger.screenshot_dir
+    # driver.save_screenshot(os.path.join(screenshot_dir, calling_request + ".png"))
     logcat_file = open(os.path.join(logcat_dir, calling_request + "_logcat.log"), 'wb')
     logFile_allure = os.path.join(logcat_dir, calling_request + "_logcat.log")
     logcat_data = driver.get_log('logcat')
