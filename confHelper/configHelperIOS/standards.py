@@ -62,6 +62,7 @@ def click_by_accessibility_id(driver, id, sleep=None, scrn=None):
     driver.implicitly_wait(10)
     btn = find_element_by_accessibility_id(elements.get(id), driver)
     print(btn.is_enabled)
+    allure.attach(btn.is_enabled)
 
     btn.click()
 
