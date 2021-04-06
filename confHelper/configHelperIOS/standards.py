@@ -61,7 +61,12 @@ def send_keys_by_xpath(driver, path, key, sleep=None, scrn=None):
 def click_by_accessibility_id(driver, id, sleep=None, scrn=None):
     driver.implicitly_wait(10)
     btn = find_element_by_accessibility_id(elements.get(id), driver)
+    print(btn.is_enabled)
+
     btn.click()
+
+    if btn.is_enabled() is False:
+        print("кнопка недоступна")
 
     if sleep is True:
          time.sleep(10)
@@ -72,7 +77,11 @@ def click_by_accessibility_id(driver, id, sleep=None, scrn=None):
 def send_keys_by_accessibility_id(driver, id, key, sleep=None, scrn=None):
     driver.implicitly_wait(10)
     cnt = find_element_by_accessibility_id(elements.get(id), driver)
+    cnt.is_enabled()
     cnt.send_keys(key)
+
+    if cnt.is_enabled() is False:
+        print("кнопка недоступна")
 
     if sleep is True:
          time.sleep(10)

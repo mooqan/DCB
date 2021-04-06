@@ -33,6 +33,7 @@ def send_keys_by_id(driver, id, text, sleep=None, scrn=None):
 
     cnt = find_element_by_id(elements.get(id), driver)
     cnt.send_keys(text)
+    
 
     if sleep is True:
         time.sleep(5)

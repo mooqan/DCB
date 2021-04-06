@@ -57,8 +57,8 @@ class Test_OMoney(capsAnroid):
             Test_authorization(driverAndroid, "+996 702 242 516", "Qwerty654321")
         with allure.step("Step 1 Проверка перехода в модуль О!Деньги"):
             click_by_id(driverAndroid, "btn_o!dengi", scrn=True, sleep=True)
-        with allure.step("Step 2 скрытие попапа о сканере"):
-            click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
+        # with allure.step("Step 2 скрытие попапа о сканере"):
+        #     click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
         with allure.step("Step 3 Проверка перехода на окно 'пополнение своего баланса'"):
             click_by_id(driverAndroid, "btn_refill", sleep=True, scrn=True)
         with allure.step("Step 4 Проверка перехода на окно завершения пополнения самого себя"):
@@ -77,14 +77,14 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #3 - Пополнение собственного ewallet")
     @allure.title("Тест.Пополнение собственного ewallet")
     @allure.description("Проверка работоспособности пополнение своего ewallet О!Деньги")
-    @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
+    # @pytest.mark.skip(reason="работает только если есть фунционал новой платежки")
     def test_self_payment_ewallet(self, driverAndroid):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driverAndroid, "+996 702 242 516", "Qwerty654321")
         with allure.step("Step 1 Проверка перехода в модуль О!Деньги"):
             click_by_id(driverAndroid, "btn_o!dengi", scrn=True, sleep=True)
-        with allure.step("Step 2 скрытие попапа о сканере"):
-            click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
+        # with allure.step("Step 2 скрытие попапа о сканере"):
+        #     click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
         with allure.step("Step 3 Проверка перехода на окно 'пополнение своего ewallet'"):
             click_by_xpath(driverAndroid, "btn_self_refill_ewallet", sleep=True, scrn=True)
         with allure.step("Step 4 Проверка ввода суммы пополнения в контейнер"):
@@ -100,19 +100,19 @@ class Test_OMoney(capsAnroid):
     @allure.story("Story #4 - Перевод средств между ewallet")
     @allure.title("Тест.Перевод средств между ewallet")
     @allure.description("Проверка работоспособности переводов между ewallet")
-    @pytest.mark.skip(reason="работает проверять во время ночных")
+    # @pytest.mark.skip(reason="работает проверять во время ночных")
     def test_transfer_payment_ewallet(self, driverAndroid):
         with allure.step("Step 0 блок успешной авторизации"):
             Test_authorization(driverAndroid, "+996 702 242 516", "Qwerty654321")
         with allure.step("Step 1 Проверка перехода в модуль О!Деньги"):
             click_by_id(driverAndroid, "btn_o!dengi", scrn=True, sleep=True)
-        with allure.step("Step 2 скрытие попапа о сканере"):
-            click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
+        # with allure.step("Step 2 скрытие попапа о сканере"):
+        #     click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
         with allure.step("Step 3 проверка открытия окна переводов ewallet"):
             click_by_xpath(driverAndroid, "btn_ewallet_transfer", sleep=True, scrn=True)
         with allure.step("Step 4 проверка ввода номера в поле реквизита"):
             send_keys_by_id(driverAndroid, "cnt_req_ewallet", "700000201", sleep=True, scrn=True)
         with allure.step("Step 5 проверка ввода суммы в поле суммы"):
             send_keys_by_id(driverAndroid, "cnt_amount", "5", sleep=True, scrn=True)
-        with allure.step("Step 5 проверка проведения транзакции"):
-            click_by_id(driverAndroid, "btn_trans_ewallet", scrn=True)
+        # with allure.step("Step 5 проверка проведения транзакции"):
+            # click_by_id(driverAndroid, "btn_trans_ewallet", scrn=True)
