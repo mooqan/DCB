@@ -60,7 +60,7 @@ class Test_OMoney(capsAnroid):
         # with allure.step("Step 2 скрытие попапа о сканере"):
         #     click_by_id(driverAndroid, "btn_scanner_course_cancel", sleep=True, scrn=True)
         with allure.step("Step 3 Проверка перехода на окно 'пополнение своего баланса'"):
-            click_by_id(driverAndroid, "btn_refill", sleep=True, scrn=True)
+            click_by_xpath(driverAndroid, "btn_self_refill_mwallet", sleep=True, scrn=True)
         with allure.step("Step 4 Проверка перехода на окно завершения пополнения самого себя"):
             click_by_id(driverAndroid, "btn_self_payment_cont", sleep=True, scrn=True)
         with allure.step("Step 5 Проверка перехода на окно выбора способа платежа"):
