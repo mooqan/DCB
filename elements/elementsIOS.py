@@ -1,9 +1,53 @@
 elements = {
     #auth
-    "phone_number_cnt":"LoginByPhoneView.phoneField.textField",
-    "phone_number_next":"LoginByPhoneView.login",
-    "phone_pass_cnt":"LoginByPasswordView.password.container",
-    "pass_number_next":"LoginByPasswordView.login",
+    "number_field": 'LoginByPhoneView_AccessibilityIds_phoneField',
+    "phone_number_next":"LoginByPhoneView_AccessibilityIds_loginAction",
+    "phone_pass_cnt":"LoginByPasswordView_AccessibilityIds_passwordField",
+    "pass_number_next":"LoginByPasswordView_AccessibilityIds_loginAction",
+    "pin_1": 'PincodeView_AccessibilityIds_pinButton1',
+    "reset_the_password": "Reset the password",
+    "close_eye": "CreatePasswordView_AccessibilityIds_passwordShowHideAction",
+    "reset_by_sms": '//XCUIElementTypeButton[@name="SMS"]',
+    "reset_by_email": "E-mail",
+    "sms_code": '//XCUIElementTypeOther[@name="suggestion"]',
+    "enter_code": "LoginByOTPView_AccessibilityIds_codeField",
+    "link_agreements": "LoginByPhoneView_AccessibilityIds_agreementAction",
+    "user_agreement": "AgreementTermsView_AccessibilityIds_agreementCheckbox",
+    "user_terms_collection": "AgreementTermsView_AccessibilityIds_identificationCheckbox",
+    "age_qualification": "AgreementTermsView_AccessibilityIds_ageCheckbox",
+    "terms_further": "AgreementTermsView_AccessibilityIds_login",
+    "user_agreement_offert":"of the service offer",
+    "back":"//XCUIElementTypeButton[@name='Back']",
+    "user_terms_collection_offer": "for the collection, processing, storage and transfer of personal data",
+    "map_of_services":"LoginByPasswordView_AccessibilityIds_opioAction",
+    "perm_offices": "Allow Once",
+    "icon_map":"ic map",
+    "btn_office": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther',
+    "lang": '//XCUIElementTypeButton[@name="LoginByPhoneView_AccessibilityIds_languageAction"]',
+    "lang_kg": '//XCUIElementTypeButton[@name="Кыргызча"]',
+    "lang_en": '//XCUIElementTypeButton[@name="English"]',
+    "lang_ru": '//XCUIElementTypeButton[@name="Русский"]',
+    "cancel": 'Cancel',
+    "accept_main_alert": '//XCUIElementTypeButton[@name="Allow"]',
+    "maps_login": 'LoginByPhoneView_AccessibilityIds_officeMapAction',
+    "further": 'Further',
+    "password_field": 'CreatePasswordView_AccessibilityIds_passwordField',
+    "otp_field": 'LoginByOTPView_AccessibilityIds_codeField',
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+    "phone_number_cnt": "LoginByPasswordView_AccessibilityIds_passwordField",
+
     "btn_cancel_notif":"//XCUIElementTypeButton[@name='ic circle close']",
     "cnt_qr_notif":'//XCUIElementTypeStaticText[@name="Personal QR code for balance replenishment"]',
     "allow_perm": '//XCUIElementTypeButton[@name="Allow"]',
@@ -16,7 +60,7 @@ elements = {
     "number_6":'//XCUIElementTypeKey[@name="6"]',
     "number_1":'//XCUIElementTypeKey[@name="1"]',
     "number_8":'//XCUIElementTypeKey[@name="8"]',
-    "Further": 'Further',
+    "hide_password": '//XCUIElementTypeButton[@name="hidePassword"]',
     "Further1":'//XCUIElementTypeStaticText[@name="Further"]',
     "shift":'//XCUIElementTypeButton[@name="shift"]',
     "Q": '//XCUIElementTypeKey[@name="Q"]',
@@ -34,14 +78,12 @@ elements = {
     "2": '//XCUIElementTypeKey[@name="2"]',
     "1": '//XCUIElementTypeKey[@name="1"]',
     "Further2": '//XCUIElementTypeButton[@name="Further"]',
-    "pin_1": '//XCUIElementTypeButton[@name="1"]',
     "pin_2": '//XCUIElementTypeStaticText[@name="1"]',
     "cnt_phone":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField',
     "btn_menu":'//XCUIElementTypeButton[@name="Menu"]',
-    "btn_personal_profile":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
-    "name_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField',
+    "btn_personal_profile":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
+    "name_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]',
     "done":'//XCUIElementTypeButton[@name="Done"]',
-    "back":'//XCUIElementTypeButton[@name="Back"]',
     "btn_balance_plus":'//XCUIElementTypeButton[@name="plus"]',
     "btn_select_type_payment":'//XCUIElementTypeButton[@name="Select"]',
     "btn_select_ewallet":'(//XCUIElementTypeButton[@name="Select"])[2]',
@@ -60,6 +102,9 @@ elements = {
     "wallet_and_banks":'//XCUIElementTypeStaticText[@name="Wallets and banks"]',
     "wallet_Odengi":'//XCUIElementTypeStaticText[@name="Кошелек О!Деньги"]',
     "hint_number":'//XCUIElementTypeStaticText[@name="996700000167"]',
+    "reset_password":'//XCUIElementTypeStaticText[@name="Reset the password"]',
+
+
 
 
 

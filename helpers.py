@@ -1,6 +1,7 @@
 import os
 
 import allure
+# import true as true
 
 
 def ensure_dir(directory):

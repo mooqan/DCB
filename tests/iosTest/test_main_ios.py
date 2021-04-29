@@ -1,5 +1,5 @@
-from tests.iosTest.test_authorization import *
-from tests.iosTest.test_lk import *
+from tests.iosTest.test_authorization_ios import *
+from tests.iosTest.test_lk_ios import *
 from tests.iosTest.test_balance import *
 from tests.iosTest.test_night import *
 
