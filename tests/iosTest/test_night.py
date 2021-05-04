@@ -3,7 +3,7 @@ import allure
 
 from confHelper.configHelperIOS.authIOS import Test_authorization
 from confHelper.configHelperIOS.configHelperIOS import capsIOS
-from confHelper.configHelperIOS.standards import click_by_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
+from confHelper.configHelperIOS.standards import click_by_accessibility_id, send_keys_by_id, click_by_xpath, send_keys_by_xpath
 from elements.elementsIOS import *
 
 @allure.epic("Epic #999 - Ночные тесты")
@@ -52,7 +52,6 @@ class Test_night(capsIOS):
             click_by_xpath(driver, "btn_select_type_payment", scrn=True, sleep=True)
             click_by_xpath(driver, "btn_select_mwallet", scrn=True, sleep=True)
         with allure.step("Step 13 ввод суммы и переход на экран подтверждения"):
-            click_by_xpath(driver, "input_amount", scrn=True, sleep=True)
             click_by_xpath(driver, "5", scrn=True, sleep=True)
             click_by_xpath(driver, "btn_continue", scrn=True, sleep=True)
         with allure.step("Step 14 переход на экран завершения оплаты"):
@@ -63,7 +62,8 @@ class Test_night(capsIOS):
             click_by_xpath(driver, "wallet_and_banks", scrn=True, sleep=True)
         with allure.step("Step 17 сервис кошелек Оденьги"):
             click_by_xpath(driver, "wallet_Odengi", scrn=True, sleep=True)
-        with allure.step("Step 18 ввод данных из хинта"):
+            click_by_xpath(driver, "btn_system_ok", scrn=True, sleep=True)
+        with allure.step("Step 18 ввод данных"):
             click_by_xpath(driver, "number_7", sleep=False)
             click_by_xpath(driver, "number_0", sleep=False)
             click_by_xpath(driver, "number_0", sleep=False)
@@ -77,9 +77,8 @@ class Test_night(capsIOS):
             click_by_xpath(driver, "btn_continue", scrn=True, sleep=True)
         with allure.step("Step 20 выбор источника средств кошелек"):
             click_by_xpath(driver, "btn_select_type_payment", scrn=True, sleep=True)
-            click_by_xpath(driver, "btn_select_ewallet", scrn=True, sleep=True)
+            click_by_accessibility_id(driver, "btn_select_ewallet", scrn=True, sleep=True)
         with allure.step("Step 21 ввод суммы и переход на экран подтверждения"):
-            click_by_xpath(driver, "input_amount", scrn=True, sleep=True)
             click_by_xpath(driver, "5", scrn=True, sleep=True)
             click_by_xpath(driver, "btn_continue", scrn=True, sleep=True)
         with allure.step("Step 22 переход на экран завершения оплаты"):

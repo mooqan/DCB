@@ -26,3 +26,6 @@ allureResult/
 *.xml
 .idea/misc.xml
 .idea/pytest.iml
+.idea/misc.xml
+.idea/pytest.iml
+confHelper/configHelperIOS/standards.py

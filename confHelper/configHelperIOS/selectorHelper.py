@@ -7,6 +7,6 @@ def find_element_by_id(el_id, driver):
 def find_element_by_xpath(el_path, driver):
     return driver.find_element_by_xpath(el_path)
 
-def find_element_by_accessibility_id(el_acs, driver):
+def find_element_by_accessibility_id(el_acs: object, driver: object) -> object:
     return driver.find_element_by_accessibility_id(el_acs)
 

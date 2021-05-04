@@ -37,17 +37,8 @@ elements = {
 
 
 
-
-
-
-
-
-    
-    
-
-
+    # O!dengi
     "phone_number_cnt": "LoginByPasswordView_AccessibilityIds_passwordField",
-
     "btn_cancel_notif":"//XCUIElementTypeButton[@name='ic circle close']",
     "cnt_qr_notif":'//XCUIElementTypeStaticText[@name="Personal QR code for balance replenishment"]',
     "allow_perm": '//XCUIElementTypeButton[@name="Allow"]',
@@ -86,7 +77,7 @@ elements = {
     "done":'//XCUIElementTypeButton[@name="Done"]',
     "btn_balance_plus":'//XCUIElementTypeButton[@name="plus"]',
     "btn_select_type_payment":'//XCUIElementTypeButton[@name="Select"]',
-    "btn_select_ewallet":'(//XCUIElementTypeButton[@name="Select"])[2]',
+    "btn_select_ewallet":'E-wallet',
     "btn_continue":'//XCUIElementTypeButton[@name="Continue"]',
     "input_amount":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeTextField',
     "btn_to_pay":'//XCUIElementTypeButton[@name="To pay 5,00 c̲"]',
@@ -100,7 +91,7 @@ elements = {
     "btn_select_mwallet":'(//XCUIElementTypeButton[@name="Select"])[3]',
     "btn_change_payment_type":'//XCUIElementTypeButton[@name="Change"]',
     "wallet_and_banks":'//XCUIElementTypeStaticText[@name="Wallets and banks"]',
-    "wallet_Odengi":'//XCUIElementTypeStaticText[@name="Кошелек О!Деньги"]',
+    "wallet_Odengi":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
     "hint_number":'//XCUIElementTypeStaticText[@name="996700000167"]',
     "reset_password":'//XCUIElementTypeStaticText[@name="Reset the password"]',
 
@@ -119,12 +110,33 @@ elements = {
     "btn_lottery": "lottery_view",
     "btn_services": "services",
     "btn_tariffs": "tariffs",
-    "btn_detalizatation": "detalizatation",
+    "btn_detalizatation": "Detalization",
     "cnt_searh_bar":"search_src_text",
     "btn_settings_lang":"settingsLang",
     "btn_ru_lang":"lang_ru",
     "btn_ok":"button1",
     "btn_container":"tv_title",
+    "btn_calendar": '//XCUIElementTypeNavigationBar[@name="Detalization"]/XCUIElementTypeButton[2]',
+    "btn_last_month": 'Last month',
+    "btn_abon_spend": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]',
+    "btn_history_detalization": 'History',
+    "btn_slider_detalization": '//XCUIElementTypeSwitch[@name="Free events"]',
+    "btn_last_week": 'For the last week',
+    "btn_choose_period": 'Choose a period',
+    "btn_done_bottom_list": '//XCUIElementTypeStaticText[@name="Done"]',
+    "btn_history_calendar": '//XCUIElementTypeNavigationBar[@name="History"]/XCUIElementTypeButton[2]',
+    "btn_order_details": 'Order details',
+    "btn_order_detalization": '(//XCUIElementTypeStaticText[@name="Order details"])[2]',
+    "btn_choose_other_format": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton',
+    "exel_format": 'EXCEL',
+    "change_date_in_order_detalization": '//XCUIElementTypeStaticText[@name="From 03.05.2021 to 03.05.2021"]',
+    "field_email": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeTextField',
+
+
+
+
+
+
     #Dengi
     "btn_o!dengi":"menu_wallet",
     "btn_self_refill":"ic_refill",
@@ -136,7 +148,7 @@ elements = {
 elements_path = {
     #auth
     #LK
-    "btn_cancel_notif":"//XCUIElementTypeButton[@name='ic circle close']",
+    "btn_cancel_notif": "//XCUIElementTypeButton[@name='ic circle close']",
     #Dengi
     "btn_ewallet":"//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='0']",
     "btn_mwallet": "//androidx.recyclerview.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']",

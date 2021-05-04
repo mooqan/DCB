@@ -79,3 +79,13 @@ def send_keys_by_accessibility_id(driver, id, key, sleep=None, scrn=None):
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+
+
+def confirm_alert(driver, sleep=None, scrn=None):
+    driver.switch_to_alert().accept()
+
+    if sleep is True:
+        time.sleep(5)
+
+    if scrn is True:
+        allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
