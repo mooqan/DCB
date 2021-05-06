@@ -33,6 +33,17 @@ elements = {
     "further": 'Further',
     "password_field": 'CreatePasswordView_AccessibilityIds_passwordField',
     "otp_field": 'LoginByOTPView_AccessibilityIds_codeField',
+    "lk_quar": 'ic qr scanner',
+    "close_lk_qr": 'ic circle close',
+    "plus_balance_lk": '//XCUIElementTypeButton[@name="plus"]',
+    "btn_back_from_replenishment": '//XCUIElementTypeNavigationBar[@name="UI.InputOfAmountPayment"]/XCUIElementTypeButton',
+    "btn_back_to_lk": '//XCUIElementTypeButton[@name="+996 702 243 852"]',
+    "btn_plus_internet": '(//XCUIElementTypeButton[@name="ic plus btn"])[2]',
+    "btn_plus_calls": '(//XCUIElementTypeButton[@name="ic plus btn"])[1]',
+    "btn_my_numbers": 'My numbers',
+    "btn_saima": 'Saima Telecom',
+    "btn_service": 'Service',
+
     
 
 
@@ -102,14 +113,13 @@ elements = {
 
 
 
+
     #LK
     "btn_internet": "internet_leftover",
     "btn_outgoing_call": "outgoing_call_leftover",
     "btn_refill": "ic_refill",
-    "btn_sub_numbers": "sub_numbers",
     "btn_lottery": "lottery_view",
-    "btn_services": "services",
-    "btn_tariffs": "tariffs",
+    "btn_tariffs": "Tariffs",
     "btn_detalizatation": "Detalization",
     "cnt_searh_bar":"search_src_text",
     "btn_settings_lang":"settingsLang",
@@ -164,8 +174,6 @@ elements_path = {
 #     "btn_refill":"ic_refill",
 #     "btn_sub_numbers":"sub_numbers",
 #     "btn_lottery":"lottery_view",
-#     "btn_services":"services",
-#     "btn_tariffs":"tariffs",
 #     "btn_detalizatation":"detalizatation",
 # }
 

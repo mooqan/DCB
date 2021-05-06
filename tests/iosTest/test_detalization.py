@@ -21,7 +21,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 выбрать период детализации за последний месяц"):
             click_by_xpath(driver,"btn_calendar", sleep=True, scrn=True)
@@ -41,7 +41,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку историю детализации"):
             click_by_accessibility_id(driver, "btn_history_detalization", sleep=True, scrn=True)
@@ -55,7 +55,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 выбрать период детализации за последний месяц"):
             click_by_xpath(driver, "btn_calendar", sleep=True, scrn=True)
@@ -75,7 +75,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку историю детализации"):
             click_by_accessibility_id(driver, "btn_history_detalization", sleep=True, scrn=True)
@@ -103,7 +103,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку историю детализации"):
             click_by_accessibility_id(driver, "btn_history_detalization", sleep=True, scrn=True)
@@ -124,7 +124,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку историю детализации"):
             click_by_accessibility_id(driver, "btn_history_detalization", sleep=True, scrn=True)
@@ -148,7 +148,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку заказать детализацию"):
             click_by_accessibility_id(driver, "btn_order_details", sleep=True, scrn=True)
@@ -164,7 +164,7 @@ class Test_detalization(capsIOS):
         with allure.step("Step 1 убрать подсказку личного QR"):
             click_by_xpath(driver, "cnt_qr_notif", scrn=True, sleep=True)
         with allure.step("Step 2 открыть вкладку детализации"):
-            TouchAction(driver).press(x=180, y=593).move_to(x=242, y=308).release().perform()
+            TouchAction(driver).press(x=179, y=522).move_to(x=203, y=192).release().perform()
             click_by_accessibility_id(driver, "btn_detalizatation", sleep=True, scrn=True)
         with allure.step("Step 3 открыть вкладку заказать детализацию"):
             click_by_accessibility_id(driver, "btn_order_details", sleep=True, scrn=True)
