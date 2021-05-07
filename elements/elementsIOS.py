@@ -43,6 +43,25 @@ elements = {
     "btn_my_numbers": 'My numbers',
     "btn_saima": 'Saima Telecom',
     "btn_service": 'Service',
+    "last_name_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField',
+    "events": 'Events',
+    "back_to_menu": 'Menu',
+    "btn_otv": 'O! TV service is not connected',
+    "btn_online_support": 'Online support',
+    "btn_close_online_support": 'ic circle close',
+    "btn_map_menu": 'Map of office and terminals',
+    "btn_ostore": 'O!Store',
+    "btn_security": 'Security',
+    "btn_about_application": 'About application',
+    "btn_mektep": 'Mektep, Distance education',
+    "share_myo_in_menu": '//XCUIElementTypeNavigationBar[@name="Menu"]/XCUIElementTypeButton',
+    "btn_exit": 'Exit',
+    "btn_change_lang_menu": 'Change the language',
+    "btn_ok_lang_kg_menu": '//XCUIElementTypeButton[@name="Макул"]',
+    "btn_ok_lang_ru_menu": '//XCUIElementTypeButton[@name="OK"]',
+    "btn_ok_lang_en_menu": '//XCUIElementTypeButton[@name="OK"]',
+    "field_email_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
+
 
     
 
