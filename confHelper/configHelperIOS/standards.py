@@ -89,3 +89,15 @@ def confirm_alert(driver, sleep=None, scrn=None):
 
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+
+
+def TouchAction(driver, X, Y, X1, Y2, sleep=None, scrn=None):
+    driver.implicitly_wait(5)
+    cnt = TouchAction(driver).press(x=X, y=Y).move_to(x=X1, y=Y2)
+    cnt.release().perform()
+
+    if sleep is True:
+        time.sleep(5)
+
+    if scrn is True:
+        allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)

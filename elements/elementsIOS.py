@@ -68,6 +68,18 @@ elements = {
 
 
     # O!dengi
+    "btn_main_Odengi": 'O!Dengi',
+    "btn_plus_balance_Odengi": '(//XCUIElementTypeButton[@name="plus"])[2]',
+    "btn_plus_wallet_Odengi": '(//XCUIElementTypeButton[@name="plus"])[1]',
+    "btn_bonus": 'О!Bonus',
+    "btn_loan": 'Loan',
+    "btn_my_cards": 'My cards',
+    "btn_history_payments": 'Payment history',
+    "btn_bills_and_fines": 'Bills and fines',
+    "btn_qr": 'QR and receipt scanner',
+    "btn_accept_camera_alert": 'OK',
+    "btn_see_all_favorites": '(//XCUIElementTypeStaticText[@name="See all"])[1]',
+    "directory_search": '(//XCUIElementTypeStaticText[@name="Directory search"])[1]',
     "phone_number_cnt": "LoginByPasswordView_AccessibilityIds_passwordField",
     "btn_cancel_notif":"//XCUIElementTypeButton[@name='ic circle close']",
     "cnt_qr_notif":'//XCUIElementTypeStaticText[@name="Personal QR code for balance replenishment"]',

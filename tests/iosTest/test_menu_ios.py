@@ -1,15 +1,16 @@
 import allure
-from appium.webdriver.common.touch_action import TouchAction
 
+from appium.webdriver.common.touch_action import TouchAction
 from confHelper.configHelperIOS.authIOS import Test_authorization
 from confHelper.configHelperIOS.configHelperIOS import capsIOS
-from confHelper.configHelperIOS.standards import find_element_by_xpath, send_keys_by_xpath ,click_by_xpath, click_by_accessibility_id, send_keys_by_accessibility_id, find_element_by_accessibility_id
+from confHelper.configHelperIOS.standards import find_element_by_xpath, send_keys_by_xpath,\
+    click_by_xpath, click_by_accessibility_id, send_keys_by_accessibility_id, find_element_by_accessibility_id
 
+# Устройство для тестов на английском языке
+# Абонент должен быть юзером НУРа не корпоративным, проверить личный профиль - поля ввода должны быть пустыми
 @allure.epic("Epic #2 - Личный кабинет в приложении МойО!")
 @allure.feature("Feature #1 - Раздел меню")
 @allure.severity(allure.severity_level.BLOCKER)
-# Устройство для тестов на английском языке
-# Абонент должен быть юзером НУРа не корпоративным, проверить личный профиль - поля ввода должны быть пустыми
 class Test_menu(capsIOS):
     @allure.title("Проверка cохранения личного профиля положительный")
     @allure.description("Проверка успешного сохранения профиля после изменений")
@@ -80,8 +81,8 @@ class Test_menu(capsIOS):
         with allure.step("Step 4 вернуться на экран меню"):
             click_by_accessibility_id(driver, "back_to_menu", sleep=True, scrn=True)
 
-    @allure.title("Проверка открытия вкладки отв в меню")
-    @allure.description("Проверка перехода во вкладку отв")
+    @allure.title("Проверка открытия онлайн поддержки")
+    @allure.description("Проверка открытия онлайн поддержки")
     @allure.severity(allure.severity_level.CRITICAL)
     def test_open_online_support(self, driver):
         with allure.step("Step 0 блок авторизации"):
@@ -190,7 +191,7 @@ class Test_menu(capsIOS):
         with allure.step("Step 4 вернуться на экран меню"):
             click_by_accessibility_id(driver, "back_to_menu", sleep=True, scrn=True)
 
-    @allure.title("Проверка отключения отображдения раздела Мектеп в боттом меню")
+    @allure.title("Проверка отключения отображения раздела Мектеп в боттом меню")
     @allure.description("Проверка работы ползунка в ячейке Мектеп")
     @allure.severity(allure.severity_level.CRITICAL)
     def test_close_mektep_in_menu(self, driver):
