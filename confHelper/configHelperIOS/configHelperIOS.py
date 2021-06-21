@@ -25,7 +25,7 @@ class capsIOS:
     @pytest.fixture(scope="function")
     def driver(self, request, device_logger):
         desired_caps = {
-            'app': '/Users/nurtest/Desktop/App Debug 2021-04-27 17-45-44/Main.ipa',
+            'app': '/Users/nurtest/Desktop/App Release 2021-06-17 12-01-15/Main.ipa',
             'bundleId': 'kg.o.nurtelecom',
             'udid': '370f6355c96bad6c0db37b689668b389d134bd55',
             'platformName': 'iOS',

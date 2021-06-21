@@ -131,7 +131,7 @@ class Test_main_Odengi(capsIOS):
         with allure.step("Step 3 открыть экран всех добавленных избранных"):
             click_by_xpath(driver, "btn_see_all_favorites", sleep=True, scrn=True)
 
-    @allure.title("Проверка перехода на экран поиска по каталога")
+    @allure.title("Проверка открытия экрана поиска по каталогу")
     @allure.description("Проверка открытия экрана поиска по каталогу")
     @allure.severity(allure.severity_level.CRITICAL)
     def test_open_catalog_search(self, driver):

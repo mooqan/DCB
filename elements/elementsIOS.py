@@ -41,6 +41,7 @@ elements = {
     "btn_plus_internet": '(//XCUIElementTypeButton[@name="ic plus btn"])[2]',
     "btn_plus_calls": '(//XCUIElementTypeButton[@name="ic plus btn"])[1]',
     "btn_my_numbers": 'My numbers',
+    "btn_back_to_my_numbers": '//XCUIElementTypeButton[@name="My numbers"]',
     "btn_saima": 'Saima Telecom',
     "btn_service": 'Service',
     "last_name_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField',
@@ -63,14 +64,15 @@ elements = {
     "field_email_lk": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
 
 
+
     
 
 
 
     # O!dengi
     "btn_main_Odengi": 'O!Dengi',
-    "btn_plus_balance_Odengi": '(//XCUIElementTypeButton[@name="plus"])[2]',
-    "btn_plus_wallet_Odengi": '(//XCUIElementTypeButton[@name="plus"])[1]',
+    "btn_plus_balance_Odengi": '(//XCUIElementTypeButton[@name="ic plus"])[2]',
+    "btn_plus_wallet_Odengi": '(//XCUIElementTypeButton[@name="ic plus"])[1]',
     "btn_bonus": 'О!Bonus',
     "btn_loan": 'Loan',
     "btn_my_cards": 'My cards',
@@ -172,10 +174,41 @@ elements = {
     "exel_format": 'EXCEL',
     "change_date_in_order_detalization": '//XCUIElementTypeStaticText[@name="From 03.05.2021 to 03.05.2021"]',
     "field_email": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeTextField',
-
-
-
-
+    "field_pin2": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField',
+    "confirm_smart_number": '//XCUIElementTypeButton[@name="Confirm"]',
+    "click_subnumber": '(//XCUIElementTypeStaticText[@name="+996 702 245 281"])[2]',
+    "changing_subnumber": '//XCUIElementTypeNavigationBar[@name="+996 702 245 281"]/XCUIElementTypeButton[2]',
+    "delete_from_my_subnumbers": '//XCUIElementTypeStaticText[@name="Delete from my numbers"]',
+    "accept_deleting_subnumber": 'OK',
+    "click_another_subnumber": '//XCUIElementTypeStaticText[@name="+996 702 242 356"]',
+    "field_create_subnumber_name": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "btn_done": 'Done',
+    "btn_subnumber_group": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell',
+    "remove_subnumber_from_group": 'Delete +996 702 242 356',
+    "delete_parent_number": '//XCUIElementTypeButton[@name="Delete"]',
+    "btn_ok_accept_deleting_number": 'OK',
+    "add_the_number": '//XCUIElementTypeButton[@name="Add the number"]',
+    "btn_ok_adding_subnumber": 'OK',
+    "changing_subnumber_2": '//XCUIElementTypeNavigationBar[@name="Test"]/XCUIElementTypeButton[2]',
+    "add_subnumber_little_btn": '//XCUIElementTypeStaticText[@name="Add"]',
+    "field_subnumber_phone": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField',
+    "btn_less_balance": '//XCUIElementTypeSwitch[@name="Report balance less than 10 soms"]',
+    "btn_cancel_subnumber_request": '//XCUIElementTypeStaticText[@name="Cancel request"]',
+    "btn_tariffs_subnumber": 'Tariff change',
+    "btn_basic_tariffs_subnumber": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]',
+    "btn_onoi_for_subnumber": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]',
+    "btn_change_tariffs_subnumber": '//XCUIElementTypeButton[@name="Change the tariff"]',
+    "btn_connected_services": 'Connected services',
+    "btn_affordable_services_sport": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]',
+    "btn_connect_service_sport": '//XCUIElementTypeStaticText[@name="Connect"]',
+    "btn_yes": 'Yes',
+    "btn_service_sport_detail": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
+    "btn_turn_of_service": '//XCUIElementTypeButton[@name="Turn off service"]',
+    "btn_active_services_subnumber": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
+    "btn_close_changing_name": 'Close',
+    "btn_close_invalid_pin": 'Close',
+    "btn_delete_keyboard": 'delete',
+    "change_subnumber_name": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther',
 
 
     #Dengi
