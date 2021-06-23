@@ -138,15 +138,36 @@ elements = {
     "wallet_Odengi":'//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]',
     "hint_number":'//XCUIElementTypeStaticText[@name="996700000167"]',
     "reset_password":'//XCUIElementTypeStaticText[@name="Reset the password"]',
-
-
-
-
-
-
-
-
-
+    "btn_add_bills_and_fines": '//XCUIElementTypeStaticText[@name="Add"]',
+    "btn_auto": 'Auto',
+    "field_license_plate": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "field_tin_auto": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "field_create_name_auto": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "btn_save": 'Save',
+    "btn_little_add": '(//XCUIElementTypeStaticText[@name="Add"])[1]',
+    "btn_gazprom":'Gazprom Kyrgyzstan',
+    "field_receipt_gazprom": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "field_surname_gazprom": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "field_name_gazprom": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeTextField',
+    "btn_ok_accept_alert": 'OK',
+    "btn_close": 'Close',
+    "btn_auto_second_cell": '(//XCUIElementTypeButton[@name="chevron"])[2]',
+    "btn_auto_second_cell_editing": '//XCUIElementTypeNavigationBar[@name="Test"]/XCUIElementTypeButton[2]',
+    "field_editing_name_auto": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther',
+    "btn_gazprom_first_cell": '(//XCUIElementTypeButton[@name="chevron"])[1]',
+    "btn_gazprom_first_cell_editing": '//XCUIElementTypeNavigationBar[@name="test"]/XCUIElementTypeButton[2]',
+    "field_editing_gazprom_cell": '//XCUIElementTypeApplication[@name="Мой О!"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther',
+    "btn_first_cell_fines": '(//XCUIElementTypeButton[@name="chevron"])[1]',
+    "btn_pay_auto_fine": '//XCUIElementTypeButton[@name="To pay"]',
+    "btn_to_repay_gazprom": '//XCUIElementTypeButton[@name="To repay"]',
+    "btn_edit_bills_and_fines": '//XCUIElementTypeButton[@name="Edit"]',
+    "btn_red_icon_delete": 'Delete TestMoiO, 01KG702AAX',
+    "btn_delete_auto_cell": '//XCUIElementTypeButton[@name="Delete"]',
+    "btn_cancel_deleting_toast": '//XCUIElementTypeStaticText[@name="Cancel"]',
+    "btn_delete_from_editing": '//XCUIElementTypeStaticText[@name="Delete"]',
+    "btn_gazprom_submit_readings": '//XCUIElementTypeStaticText[@name="Submit the readings"]',
+    "btn_auto_photo": 'View photo',
+    "btn_cancel_auto_photo": 'Cancel',
     #LK
     "btn_internet": "internet_leftover",
     "btn_outgoing_call": "outgoing_call_leftover",
