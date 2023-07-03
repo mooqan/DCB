@@ -1,97 +1,7 @@
 elements = {
     #auth
-    "btn_confirm":"confirm",
-    "cnt_phone_number":"et_input",
-    "btn_phone_number_next":"btn_enter",
-    "btn_phone_pswrd_next":"btn",
-    "btn_service_conditions": "tv_link",
-    "checkbox_conditions": "cb_data_processing",
-    "checkbox_terms_of_use": "chb_app_use_terms",
-    "checkbox_18_years": "chb_age_condition",
-    "btn_wallet_use_term": "tv_wallet_use_term_link",
-    "btn_next_condition": "btn_next",
-    "btn_reset_pass": "tv_action",
-    "btn_reset_pswrd_next": "btn",
-    "btn_list_offices": "office_list",
-    "btn_get_number": "btn_get_number",
-    "btn_get_other_number": "btn_get_other_number",
-
-    "touch_outside":"touch_outside",
-
-
-    #number recovery
-    "btn_phone_recovery": "number_recovery",
-    "check_phone_recovery": "btn_start_recover",
-    "input_number": "et_input",
-    "checking_number": "btn_start_recover",
-    "button_next": "btn_next",
-    "button_send": "btn_main",
-    "button_shot": "btn_capture",
-    "button_confirm": "btn_confirm",
-
-    #LK
-    "btn_LK": "menu_lk",
-    "btn_scanner_cancel":"tv_ok",
-    "space_out_cntn":"touch_outside",
-    "btn_scanner_course_cancel":"tv_ok",
-    "btn_internet": "internet_leftover",
-    "btn_outgoing_call": "outgoing_call_leftover",
-    "btn_refill": "rl_refill",
-    "btn_sub_numbers": "sub_numbers",
-    "btn_lottery": "lottery_view",
-    "btn_services": "services",
-    "btn_tariffs": "tariffs",
-    "btn_detalizatation": "detalizatation",
-    "cnt_searh_bar":"search_src_text",
-    "btn_settings_lang":"settingsLang",
-    "btn_ru_lang":"lang_ru",
-    "btn_ok":"button1",
-    "btn_container":"tv_title",
-    "btn_edit_profile":"edit_profile",
-    "cnt_name":"profile_name",
-    "btn_profile_save":"profile_save",
-    "btn_choose_ru_lang":"lang_ru",
-    "btn_office_list":"office_list",
-    "btn_place_of_payment_payment":"pay_btn",
-    "cnt_search_field_place_of_payment":"et_search",
-    "btn_menu":"menu_promotion",
-    "btn_menu_office_map":"office_map",
-    "btn_menu_change_lang":"change_lang",
-    "btn_saima": "nrv_saima",
-
-    #Dengi
-    "btn_self_refill_ewallet":"wallet_balance",
-    "btn_dengi": "menu_wallet",
-    "btn_o!dengi":"menu_wallet",
-    "btn_self_refill":"ic_refill",
-    "btn_choose_payment_type":"choose",
-    "cnt_amount":"amount",
-    "btn_pay":"pay_btn",
-    "btn_credit":"credit_repayment",
-    "btn_bonuses":"bonuses",
-    "btn_cards":"my_cards",
-    "btn_history":"history",
-    "btn_fines":"unpaid_bills",
-    "btn_qr_scanner": "qr",
-    "btn_add_fav": "favoriteCardViewLayout",
-    "btn_search_catalog": "tv_clickable",
-    "input_mobile_number": "et_input",
-    "btn_next": "btn",
-    "btn_open_main":"btn_open_main",
-    "cnt_payment_value": "et_input",
-
-    #Self_paymaent
-    "btn_self_payment_cont":"btn",
-    "btn_choose_payment_wallet":"tv_action",
-    "cnt_amount_ewallet_payment":"rl_input_wrapper",
-    "btn_replenish":"replenish",
-    "cnt_req_ewallet":"phone_number",
-    "btn_trans_ewallet":"translation",
-
-    #Menu
-    "btn_confirm_language": "button1",
-    "btn_online_support": "cl_layout",
-
+    "btn_5pincode":"fivePinCodeButton",
+    "tab_payment":"itemPayment",
 }
 
 elements_path = {
@@ -162,7 +72,12 @@ elements_path = {
     "btn_history_xpath":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
     "btn_pay":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.Button",
     "btn_favorites":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[3]",
-}
+    # DCB360
+    "view_dcb":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View",
+    "cnt_phoneNumber":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText",
+    "cnt_phonePassword":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.widget.EditText",
+    "btn_enter":"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[2]"
+    }
 
 list_activity = {
     "LoginByPasswordActivity":".ui.auth.login.password.LoginByPasswordActivity",

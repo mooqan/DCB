@@ -17,7 +17,7 @@ class capsAnroid:
 
         calling_request = request._pyfuncitem.name
 
-        driver = webdriver.Remote(APPIUM_LOCAL_HOST_URL, device.get(7))
+        driver = webdriver.Remote(APPIUM_LOCAL_HOST_URL, device.get(1))
 
         def fin():
             take_screenhot_and_logcat(driver, device_logger, calling_request)

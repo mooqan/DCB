@@ -1,17 +1,17 @@
 
-appPackage = 'kg.o.nurtelecom'
+appPackage = 'kg.dcb.mobilebanking.debug'
 platformName = 'Android'
-appActivity = '.ui.splash.SplashScreenActivity'
+appActivity = 'kg.dcb.mobilebanking.MainActivity'
 
 
 device = {
     1 : {
     'appPackage': appPackage,
-    'platformName': platformName,
-    'platformVersion': '10.0',
-    'deviceName': 'Pixel 3A XL',
-    'udid' : '93GAX07PX8',
     'appActivity': appActivity,
+    'appium:udid': 'c3f50959',
+    'appium:deviceName': 'Redmi note 11',
+    'appium:platformVersion': "13",
+    'platformName': 'Android',
     'autoGrantPermissions': 'true',
     'clearDeviceLogsOnStart': 'true',
     'noSign': 'true',
