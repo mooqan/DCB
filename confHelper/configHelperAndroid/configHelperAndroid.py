@@ -1,7 +1,7 @@
 import pytest
 
 from appium import webdriver
-from helpers import take_screenhot_and_logcat
+from helpers import take_screenshot_and_logcat
 from confHelper.configHelperAndroid.devices_capabilities import device
 
 APPIUM_LOCAL_HOST_URL = 'http://localhost:4723/wd/hub'
@@ -20,7 +20,7 @@ class capsAnroid:
         driver = webdriver.Remote(APPIUM_LOCAL_HOST_URL, device.get(1))
 
         def fin():
-            take_screenhot_and_logcat(driver, device_logger, calling_request)
+            take_screenshot_and_logcat(driver, device_logger, calling_request)
             driver.quit()
 
         request.addfinalizer(fin)
