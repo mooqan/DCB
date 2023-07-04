@@ -12,7 +12,7 @@ class Test_DCB360(capsAnroid):
     @allure.title("Проверка входа")
     @allure.description("Проверка входа в приложение DCB360 зарегистрированного пользователя")
     def test_auth_positive(self, driverAndroid):
-        with allure.step("Step Открытие приложения"):
+        with allure.step("Step #0 Открытие приложения"):
             screenshot(driverAndroid)
             click_by_id(driverAndroid, "tab_payment", scrn=True)
         with allure.step("Step #1 Ввод номера/логина"):
