@@ -23,13 +23,9 @@ class Test_DCB360(capsAnroid):
         with allure.step("Step #3 Нажатие кнопки входа"):
             click_by_xpath(driverAndroid,"btn_enter", scrn=True)
         with allure.step("Step #4 Создание пинкода"):
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
+            for _ in range(4):
+                click_by_id(driverAndroid, "btn_5pincode", scrn=True)
         with allure.step("Step #5 Подтверждение пинкода"):
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
-            click_by_id(driverAndroid,"btn_5pincode", scrn=True)
+            for _ in range(4):
+                click_by_id(driverAndroid, "btn_5pincode", scrn=True)
 
