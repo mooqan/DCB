@@ -15,7 +15,7 @@ class capsAnroid:
         calling_request = request._pyfuncitem.name
         device_info = device.get(1)
 
-        with allure.step("Step #0 Device Information"):
+        with allure.step("Device Information"):
             allure.attach(json.dumps(device_info, indent=4), "Device Info", allure.attachment_type.JSON)
 
         driver = webdriver.Remote(APPIUM_LOCAL_HOST_URL, device_info)
