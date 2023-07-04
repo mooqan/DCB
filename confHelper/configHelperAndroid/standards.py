@@ -3,6 +3,7 @@ import os
 
 import allure
 from allure_commons.types import AttachmentType
+from selenium.common import NoSuchElementException
 
 from confHelper.configHelperAndroid.selectorHelper import find_element_by_id, find_element_by_xpath, \
     find_elements_by_accessibility_id
@@ -15,60 +16,74 @@ F_EXT = ".png"
 
 
 def click_by_id(driver, id, sleep=None, scrn=None):
-    driver.implicitly_wait(10)
-    btn = find_element_by_id(elements.get(id), driver)
-    btn.click()
-
+    try:
+        driver.implicitly_wait(5)
+        # Попытка найти элемент по идентификатору
+        element = find_element_by_id(elements.get(id), driver)
+        # Делать что-то с элементом, если он найден
+        element.click()
+    except NoSuchElementException:
+        with allure.step("Элемент не найден на экране"):
+            allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=allure.attachment_type.PNG)
+            raise AssertionError("Элемент не найден на экране")
     if sleep is True:
         time.sleep(5)
-
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
-
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
 
 
 def send_keys_by_id(driver, id, text, sleep=None, scrn=None):
-    driver.implicitly_wait(10)
-
-    cnt = find_element_by_id(elements.get(id), driver)
-    cnt.send_keys(text)
-    
-
+    try:
+        driver.implicitly_wait(5)
+        # Попытка найти элемент по идентификатору
+        element = find_element_by_id(elements.get(id), driver)
+        # Делать что-то с элементом, если он найден
+        element.send_keys(text)
+    except NoSuchElementException:
+        with allure.step("Элемент не найден на экране"):
+            allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=allure.attachment_type.PNG)
+            raise AssertionError("Элемент не найден на экране")
     if sleep is True:
         time.sleep(5)
-
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
-
     driver.implicitly_wait(5)
 
 
 def click_by_xpath(driver, path, sleep=None, scrn=None):
-    driver.implicitly_wait(10)
-    btn = find_element_by_xpath(elements_path.get(path), driver)
-    btn.click()
-
+    try:
+        driver.implicitly_wait(5)
+        # Попытка найти элемент по идентификатору
+        element = find_element_by_xpath(elements_path.get(path), driver)
+        # Делать что-то с элементом, если он найден
+        element.click()
+    except NoSuchElementException:
+        with allure.step("Элемент не найден на экране"):
+            allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=allure.attachment_type.PNG)
+            raise AssertionError("Элемент не найден на экране")
     if sleep is True:
         time.sleep(5)
-
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
-
     driver.implicitly_wait(5)
 
 
 def send_keys_by_xpath(driver, id, text, sleep=None, scrn=None):
-    driver.implicitly_wait(10)
-    cnt = find_element_by_xpath(elements_path.get(id), driver)
-    cnt.send_keys(text)
-
+    try:
+        driver.implicitly_wait(5)
+        # Попытка найти элемент по идентификатору
+        element = find_element_by_xpath(elements_path.get(id), driver)
+        # Делать что-то с элементом, если он найден
+        element.send_keys(text)
+    except NoSuchElementException:
+        with allure.step("Элемент не найден на экране"):
+            allure.attach(driver.get_screenshot_as_png(), name="screenshot", attachment_type=allure.attachment_type.PNG)
+            raise AssertionError("Элемент не найден на экране")
     if sleep is True:
         time.sleep(5)
-
     if scrn is True:
         allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
-
     driver.implicitly_wait(5)
 
 
