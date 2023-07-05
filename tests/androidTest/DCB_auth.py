@@ -11,6 +11,8 @@ class Test_DCB360(capsAnroid):
     @allure.story("Story #1 - Авторизация зарегистрированного пользователя")
     @allure.title("Проверка входа")
     @allure.description("Проверка входа в приложение DCB360 зарегистрированного пользователя")
+    @allure.issue("https://mail.ru/")  # Пример ссылки на задачу или дефект
+    @allure.testcase("https://app.qase.io/case/DCB360-1")  # Пример ссылки на тест-кейс
     def test_auth_positive(self, driverAndroid):
         with allure.step("Step #0 Открытие приложения"):
             screenshot(driverAndroid)
